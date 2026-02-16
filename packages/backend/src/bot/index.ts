@@ -1,30 +1,20 @@
 import { Bot, type Context } from "grammy";
-import {
-  type Conversation,
-  type ConversationFlavor,
-  conversations,
-  createConversation,
-} from "@grammyjs/conversations";
 import { config } from "../config.js";
 import { logger } from "../utils/logger.js";
 import { startCommand } from "./commands/start.js";
 import { statusCommand } from "./commands/status.js";
 import { disconnectCommand } from "./commands/disconnect.js";
 import { scanCommand } from "./commands/scan.js";
-import { authConversation } from "./conversations/auth-conversation.js";
+import { authStateMachine, startConnect } from "./auth-state-machine.js";
 
-export type BotContext = ConversationFlavor<Context>;
+export function createBot(): Bot {
+  const bot = new Bot(config.botToken);
 
-export function createBot(): Bot<BotContext> {
-  const bot = new Bot<BotContext>(config.botToken);
-
-  bot.use(conversations());
-  bot.use(createConversation(authConversation));
+  // Auth state machine middleware — must be before command handlers
+  bot.use(authStateMachine);
 
   bot.command("start", startCommand);
-  bot.command("connect", async (ctx) => {
-    await ctx.conversation.enter("authConversation");
-  });
+  bot.command("connect", startConnect);
   bot.command("status", statusCommand);
   bot.command("disconnect", disconnectCommand);
   bot.command("scan", scanCommand);
@@ -54,7 +44,7 @@ export function createBot(): Bot<BotContext> {
     switch (data) {
       case "connect":
         await ctx.answerCallbackQuery();
-        await ctx.conversation.enter("authConversation");
+        await startConnect(ctx);
         break;
       case "disconnect":
         await ctx.answerCallbackQuery();
