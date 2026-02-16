@@ -6,6 +6,7 @@ import {
   createConversation,
 } from "@grammyjs/conversations";
 import { config } from "../config.js";
+import { logger } from "../utils/logger.js";
 import { startCommand } from "./commands/start.js";
 import { statusCommand } from "./commands/status.js";
 import { disconnectCommand } from "./commands/disconnect.js";
@@ -37,6 +38,10 @@ export function createBot(): Bot<BotContext> {
         "/status — Статус подключения и статистика\n" +
         "/help — Список команд",
     );
+  });
+
+  bot.catch((err) => {
+    logger.error({ error: err.error, update: err.ctx?.update?.update_id }, "Bot error");
   });
 
   bot.on("callback_query:data", async (ctx) => {
