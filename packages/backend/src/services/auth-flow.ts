@@ -14,6 +14,10 @@ export class AuthFlow {
   private client: TelegramClient | null = null;
   private phoneCodeHash = "";
 
+  isStarted(): boolean {
+    return this.client !== null && this.phoneCodeHash !== "";
+  }
+
   async startAuth(phoneNumber: string): Promise<AuthResult> {
     try {
       this.client = new TelegramClient(

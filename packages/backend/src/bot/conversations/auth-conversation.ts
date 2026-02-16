@@ -12,6 +12,9 @@ import { users } from "../../db/schema.js";
 import { connectedMenuKeyboard } from "../keyboards.js";
 import { logger } from "../../utils/logger.js";
 
+// Store auth flows outside conversation to survive replays
+const pendingAuths = new Map<number, AuthFlow>();
+
 export async function authConversation(
   conversation: Conversation,
   ctx: Context,
@@ -47,15 +50,24 @@ export async function authConversation(
     return;
   }
 
-  const authFlow = new AuthFlow();
+  // Reuse existing auth flow if conversation replays, otherwise create new
+  let authFlow = pendingAuths.get(telegramId);
+  if (!authFlow || !authFlow.isStarted()) {
+    // Clean up old flow if exists
+    if (authFlow) await authFlow.destroy();
 
-  await ctx.reply("⏳ Отправляю код авторизации...");
-  const startResult = await authFlow.startAuth(phoneNumber);
+    authFlow = new AuthFlow();
+    pendingAuths.set(telegramId, authFlow);
 
-  if (!startResult.success) {
-    await ctx.reply(`❌ Ошибка: ${startResult.error}\nПопробуй снова: /connect`);
-    await authFlow.destroy();
-    return;
+    await ctx.reply("⏳ Отправляю код авторизации...");
+    const startResult = await authFlow.startAuth(phoneNumber);
+
+    if (!startResult.success) {
+      await ctx.reply(`❌ Ошибка: ${startResult.error}\nПопробуй снова: /connect`);
+      await authFlow.destroy();
+      pendingAuths.delete(telegramId);
+      return;
+    }
   }
 
   await ctx.reply(
@@ -64,7 +76,7 @@ export async function authConversation(
   );
 
   const codeCtx = await conversation.waitFor("message:text");
-  const code = codeCtx.message!.text.trim().replace(/\s/g, "");
+  const code = codeCtx.message!.text.trim().replace(/[^0-9]/g, "");
 
   const codeResult = await authFlow.submitCode(phoneNumber, code);
 
@@ -85,16 +97,19 @@ export async function authConversation(
     if (!tfaResult.success) {
       await ctx.reply(`❌ Неверный пароль: ${tfaResult.error}\nПопробуй снова: /connect`);
       await authFlow.destroy();
+      pendingAuths.delete(telegramId);
       return;
     }
   } else if (!codeResult.success) {
     await ctx.reply(`❌ Неверный код: ${codeResult.error}\nПопробуй снова: /connect`);
     await authFlow.destroy();
+    pendingAuths.delete(telegramId);
     return;
   }
 
   const sessionString = authFlow.getSessionString();
   const encryptedSession = encrypt(sessionString);
+  pendingAuths.delete(telegramId);
 
   await db
     .update(users)
