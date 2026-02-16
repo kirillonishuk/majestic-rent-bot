@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/api/client.ts","./src/components/carimage.tsx","./src/components/filterbar.tsx","./src/components/layout.tsx","./src/components/rentalcard.tsx","./src/hooks/usetelegram.ts","./src/pages/rentalhistory.tsx","./src/pages/statistics.tsx","./src/pages/vehicledetail.tsx","./src/utils/format.ts"],"version":"5.9.3"}

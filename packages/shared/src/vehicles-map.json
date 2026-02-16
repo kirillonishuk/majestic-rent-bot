@@ -1,0 +1,5232 @@
+{
+  "volatus": {
+    "brand": "Buckingham",
+    "model": "Volatus",
+    "category": "heli"
+  },
+  "swift2": {
+    "brand": "Buckingham",
+    "model": "Swift Deluxe",
+    "category": "heli"
+  },
+  "swift": {
+    "brand": "Buckingham",
+    "model": "Swift",
+    "category": "heli"
+  },
+  "supervolito2": {
+    "brand": "Buckingham",
+    "model": "SuperVolito Carbon",
+    "category": "heli"
+  },
+  "supervolito": {
+    "brand": "Buckingham",
+    "model": "SuperVolito",
+    "category": "heli"
+  },
+  "buzzard2": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "frogger": {
+    "brand": "Maibatsu",
+    "model": "Frogger",
+    "category": "heli"
+  },
+  "seasparrow2": {
+    "brand": "HVY",
+    "model": "Sparrow",
+    "category": "heli"
+  },
+  "maverick": {
+    "brand": "Buckingham",
+    "model": "Maverick",
+    "category": "heli"
+  },
+  "avisa": {
+    "brand": "Kraken",
+    "model": "Avisa",
+    "category": "boat"
+  },
+  "tourbillon": {
+    "brand": "Truffade",
+    "model": "Heyl",
+    "category": "car"
+  },
+  "submersible2": {
+    "brand": "Kraken",
+    "model": "Poseidon",
+    "category": "boat"
+  },
+  "utopia": {
+    "brand": "Horacio",
+    "model": "Paradise",
+    "category": "car"
+  },
+  "cc850": {
+    "brand": "Overflod",
+    "model": "Selip-CC850",
+    "category": "car"
+  },
+  "huayrar": {
+    "brand": "Horacio",
+    "model": "Wayra R",
+    "category": "car"
+  },
+  "mistral": {
+    "brand": "Truffade",
+    "model": "Wistral",
+    "category": "car"
+  },
+  "bolide": {
+    "brand": "Truffade",
+    "model": "Formula",
+    "category": "car"
+  },
+  "noire": {
+    "brand": "Truffade",
+    "model": "Blanche",
+    "category": "car"
+  },
+  "bdivo": {
+    "brand": "Truffade",
+    "model": "Vivo",
+    "category": "car"
+  },
+  "nevera": {
+    "brand": "Rimus",
+    "model": "4-VR",
+    "category": "car"
+  },
+  "jesko20": {
+    "brand": "Overflod",
+    "model": "Gesko",
+    "category": "car"
+  },
+  "amgone": {
+    "brand": "Benefactor",
+    "model": "ASG P-One",
+    "category": "car"
+  },
+  "submersible": {
+    "brand": "Kraken",
+    "model": "Submersible PS-1021",
+    "category": "boat"
+  },
+  "tecnomar": {
+    "brand": "Pegassi",
+    "model": "Viareggio",
+    "category": "boat"
+  },
+  "chiron19": {
+    "brand": "Truffade",
+    "model": "Shiron",
+    "category": "car"
+  },
+  "terzo": {
+    "brand": "Pegassi",
+    "model": "Tenzo",
+    "category": "car"
+  },
+  "gemera": {
+    "brand": "Overflod",
+    "model": "Genera",
+    "category": "car"
+  },
+  "rb001": {
+    "brand": "Dewbauchee",
+    "model": "Newey",
+    "category": "car"
+  },
+  "regera": {
+    "brand": "Overflod",
+    "model": "RG-R",
+    "category": "car"
+  },
+  "918s": {
+    "brand": "Pfister",
+    "model": "918 Spyder",
+    "category": "car"
+  },
+  "battista": {
+    "brand": "Cortanze",
+    "model": "Farina",
+    "category": "car"
+  },
+  "imola": {
+    "brand": "Horacio",
+    "model": "Emola",
+    "category": "car"
+  },
+  "agera": {
+    "brand": "Overflod",
+    "model": "Aghera",
+    "category": "car"
+  },
+  "senna": {
+    "brand": "Progen",
+    "model": "Ayrton",
+    "category": "car"
+  },
+  "veneno": {
+    "brand": "Pegassi",
+    "model": "Verano",
+    "category": "car"
+  },
+  "l650": {
+    "brand": "Buckingham",
+    "model": "L650",
+    "category": "boat"
+  },
+  "lamborghinivision": {
+    "brand": "Pegassi",
+    "model": "Vision GR",
+    "category": "car"
+  },
+  "speedtail": {
+    "brand": "Progen",
+    "model": "Alex",
+    "category": "car"
+  },
+  "amgf1": {
+    "brand": "Benefactor",
+    "model": "AMX F1",
+    "category": "car"
+  },
+  "sixteen": {
+    "brand": "Attar",
+    "model": "Sixtean",
+    "category": "car"
+  },
+  "missionr": {
+    "brand": "Pfister",
+    "model": "Messiah",
+    "category": "car"
+  },
+  "idr": {
+    "brand": "BF",
+    "model": "Norma",
+    "category": "car"
+  },
+  "ec120": {
+    "brand": "Buckingham",
+    "model": "EC120",
+    "category": "heli"
+  },
+  "fxxk": {
+    "brand": "Grotti",
+    "model": "FXX-K",
+    "category": "car"
+  },
+  "tuatara": {
+    "brand": "JSC",
+    "model": "Tuataira",
+    "category": "car"
+  },
+  "marquis": {
+    "brand": "Dinka",
+    "model": "Marquis",
+    "category": "boat"
+  },
+  "bell429": {
+    "brand": "Dale",
+    "model": "429",
+    "category": "heli"
+  },
+  "centenario": {
+    "brand": "Pegassi",
+    "model": "Centerio",
+    "category": "car"
+  },
+  "invencible": {
+    "brand": "Pegassi",
+    "model": "Borkert",
+    "category": "car"
+  },
+  "temerario": {
+    "brand": "Pegassi",
+    "model": "Mitja",
+    "category": "car"
+  },
+  "laferrari": {
+    "brand": "Grotti",
+    "model": "LaGrotti",
+    "category": "car"
+  },
+  "ec135": {
+    "brand": "Buckingham",
+    "model": "EC135",
+    "category": "heli"
+  },
+  "daytona": {
+    "brand": "Grotti",
+    "model": "Timucua SP3",
+    "category": "car"
+  },
+  "revuelto": {
+    "brand": "Pegassi",
+    "model": "Rewuelto",
+    "category": "car"
+  },
+  "avtr": {
+    "brand": "Benefactor",
+    "model": "Avatar",
+    "category": "car"
+  },
+  "j50": {
+    "brand": "Grotti",
+    "model": "Flaman J50",
+    "category": "car"
+  },
+  "ah6": {
+    "brand": "Buckingham",
+    "model": "AH-6",
+    "category": "heli"
+  },
+  "artura": {
+    "brand": "Progen",
+    "model": "Melville",
+    "category": "car"
+  },
+  "essenza": {
+    "brand": "Pegassi",
+    "model": "Ezensa SV12",
+    "category": "car"
+  },
+  "batur": {
+    "brand": "Enus",
+    "model": "Bangli",
+    "category": "car"
+  },
+  "longfin": {
+    "brand": "Shitzu",
+    "model": "Longfin",
+    "category": "boat"
+  },
+  "aeroboat": {
+    "brand": "Enus",
+    "model": "Airboat V12",
+    "category": "boat"
+  },
+  "xclass2": {
+    "brand": "Benefactor",
+    "model": "X-Class BF",
+    "category": "truck"
+  },
+  "semi": {
+    "brand": "Coil",
+    "model": "Semie",
+    "category": "truck"
+  },
+  "asvj": {
+    "brand": "Pegassi",
+    "model": "Avendore SVJ",
+    "category": "car"
+  },
+  "purosangue": {
+    "brand": "Grotti",
+    "model": "Primogenito",
+    "category": "car"
+  },
+  "f8": {
+    "brand": "Grotti",
+    "model": "F8",
+    "category": "car"
+  },
+  "sf90": {
+    "brand": "Grotti",
+    "model": "SF90",
+    "category": "car"
+  },
+  "monza": {
+    "brand": "Grotti",
+    "model": "Monscia SP2",
+    "category": "car"
+  },
+  "ferrari812": {
+    "brand": "Grotti",
+    "model": "812",
+    "category": "car"
+  },
+  "720s": {
+    "brand": "Progen",
+    "model": "720s",
+    "category": "car"
+  },
+  "countach": {
+    "brand": "Pegassi",
+    "model": "Cauntach",
+    "category": "car"
+  },
+  "mp1": {
+    "brand": "Progen",
+    "model": "P1",
+    "category": "car"
+  },
+  "valour": {
+    "brand": "Dewbauchee",
+    "model": "Malicious",
+    "category": "car"
+  },
+  "volatusc": {
+    "brand": "Buckingham",
+    "model": "Volatus S",
+    "category": "heli"
+  },
+  "evija": {
+    "brand": "Ocelot",
+    "model": "Aevij",
+    "category": "car"
+  },
+  "veyron": {
+    "brand": "Truffade",
+    "model": "Weyron",
+    "category": "car"
+  },
+  "huracan": {
+    "brand": "Pegassi",
+    "model": "Hurricane",
+    "category": "car"
+  },
+  "fordgt": {
+    "brand": "Vapid",
+    "model": "GT",
+    "category": "car"
+  },
+  "r66": {
+    "brand": "Buckingham",
+    "model": "R66",
+    "category": "heli"
+  },
+  "lanzador": {
+    "brand": "Pegassi",
+    "model": "Brocca",
+    "category": "car"
+  },
+  "488pista": {
+    "brand": "Grotti",
+    "model": "488 Pizta",
+    "category": "car"
+  },
+  "rrphantom": {
+    "brand": "Enus",
+    "model": "Phantasm VIII",
+    "category": "car"
+  },
+  "cullinan": {
+    "brand": "Enus",
+    "model": "Callinon",
+    "category": "car"
+  },
+  "ghost2": {
+    "brand": "Enus",
+    "model": "Shade II",
+    "category": "car"
+  },
+  "spectre": {
+    "brand": "Enus",
+    "model": "Rosenthal",
+    "category": "car"
+  },
+  "urus": {
+    "brand": "Pegassi",
+    "model": "Ursus",
+    "category": "car"
+  },
+  "vanquish2": {
+    "brand": "Dewbauchee",
+    "model": "Vanquesh Zagado",
+    "category": "car"
+  },
+  "huracan2": {
+    "brand": "Pegassi",
+    "model": "Hurricane Spyder",
+    "category": "car"
+  },
+  "ff12": {
+    "brand": "Grotti",
+    "model": "F12 Verleenetta",
+    "category": "car"
+  },
+  "bentayga2": {
+    "brand": "Enus",
+    "model": "Benteygo II",
+    "category": "car"
+  },
+  "spur": {
+    "brand": "Enus",
+    "model": "Doncker Wolk",
+    "category": "car"
+  },
+  "porsche935": {
+    "brand": "Pfister",
+    "model": "935",
+    "category": "car"
+  },
+  "actros": {
+    "brand": "Benefactor",
+    "model": "Actor",
+    "category": "truck"
+  },
+  "amggt2": {
+    "brand": "Benefactor",
+    "model": "GT C192",
+    "category": "car"
+  },
+  "rrphantom2": {
+    "brand": "Enus",
+    "model": "Phantasm Limo",
+    "category": "car"
+  },
+  "dbx": {
+    "brand": "Dewbauchee",
+    "model": "DBX",
+    "category": "car"
+  },
+  "vulcan": {
+    "brand": "Dewbauchee",
+    "model": "Vulcore",
+    "category": "car"
+  },
+  "cayenne2": {
+    "brand": "Pfister",
+    "model": "Rayenne Coupe",
+    "category": "car"
+  },
+  "tug": {
+    "brand": "Buckingham",
+    "model": "Tug",
+    "category": "boat"
+  },
+  "roma": {
+    "brand": "Grotti",
+    "model": "Manzoni",
+    "category": "car"
+  },
+  "mc20": {
+    "brand": "Lampadati",
+    "model": "MC20",
+    "category": "car"
+  },
+  "wraithb": {
+    "brand": "Enus",
+    "model": "Veil",
+    "category": "car"
+  },
+  "sls": {
+    "brand": "Benefactor",
+    "model": "SLS",
+    "category": "car"
+  },
+  "regalia": {
+    "brand": "Quartz",
+    "model": "Regalia",
+    "category": "car"
+  },
+  "reventon": {
+    "brand": "Pegassi",
+    "model": "Eventora",
+    "category": "car"
+  },
+  "escalade2": {
+    "brand": "Albany",
+    "model": "Excalibur GM T1XL",
+    "category": "car"
+  },
+  "db12": {
+    "brand": "Dewbauchee",
+    "model": "DB12",
+    "category": "car"
+  },
+  "bacalar": {
+    "brand": "Enus",
+    "model": "Blanco",
+    "category": "car"
+  },
+  "sclass4": {
+    "brand": "Benefactor",
+    "model": "S-Class Z223",
+    "category": "car"
+  },
+  "dawn": {
+    "brand": "Enus",
+    "model": "Veil Cabrio",
+    "category": "car"
+  },
+  "lc500": {
+    "brand": "Emperor",
+    "model": "LC 500",
+    "category": "car"
+  },
+  "swiftc": {
+    "brand": "Buckingham",
+    "model": "Swift S",
+    "category": "heli"
+  },
+  "t680": {
+    "brand": "Brute",
+    "model": "T680",
+    "category": "truck"
+  },
+  "gallardo": {
+    "brand": "Pegassi",
+    "model": "De Silva",
+    "category": "car"
+  },
+  "m7g70": {
+    "brand": "Ubermacht",
+    "model": "7 G70",
+    "category": "car"
+  },
+  "amggt": {
+    "brand": "Benefactor",
+    "model": "GT R",
+    "category": "car"
+  },
+  "db11": {
+    "brand": "Dewbauchee",
+    "model": "DB11",
+    "category": "car"
+  },
+  "hotwheels": {
+    "brand": "Fast Wheels",
+    "model": "Milltown",
+    "category": "car"
+  },
+  "bentaygast": {
+    "brand": "Enus",
+    "model": "Benteygo",
+    "category": "car"
+  },
+  "db112": {
+    "brand": "Dewbauchee",
+    "model": "DB11 Cabrio",
+    "category": "car"
+  },
+  "sclass3": {
+    "brand": "Benefactor",
+    "model": "S-Class W223",
+    "category": "car"
+  },
+  "pullman": {
+    "brand": "Benefactor",
+    "model": "S-Class VV222 Limo",
+    "category": "car"
+  },
+  "xm": {
+    "brand": "Ubermacht",
+    "model": "XM G09",
+    "category": "car"
+  },
+  "g63": {
+    "brand": "Benefactor",
+    "model": "G-Class W464",
+    "category": "car"
+  },
+  "sl": {
+    "brand": "Benefactor",
+    "model": "SL R232",
+    "category": "car"
+  },
+  "gclass4": {
+    "brand": "Benefactor",
+    "model": "G-Class W464 4x4",
+    "category": "car"
+  },
+  "rrs": {
+    "brand": "Gallivanter",
+    "model": "Gover Sport L461",
+    "category": "car"
+  },
+  "ghost": {
+    "brand": "Enus",
+    "model": "Shade",
+    "category": "car"
+  },
+  "continental": {
+    "brand": "Enus",
+    "model": "Mainland GT",
+    "category": "car"
+  },
+  "taycan": {
+    "brand": "Pfister",
+    "model": "Teycan",
+    "category": "car"
+  },
+  "cayen19": {
+    "brand": "Pfister",
+    "model": "Rayenne",
+    "category": "car"
+  },
+  "panamera2": {
+    "brand": "Pfister",
+    "model": "Paramena G2 Sport Touring",
+    "category": "car"
+  },
+  "toro2": {
+    "brand": "Lampadati",
+    "model": "Toro GT",
+    "category": "boat"
+  },
+  "eclass3": {
+    "brand": "Benefactor",
+    "model": "E-Class W214",
+    "category": "car"
+  },
+  "gt63s": {
+    "brand": "Benefactor",
+    "model": "ASG GT 63s",
+    "category": "car"
+  },
+  "ab2": {
+    "brand": "Gallivanter",
+    "model": "Gover L460",
+    "category": "car"
+  },
+  "etron2": {
+    "brand": "Obey",
+    "model": "Q8 I-tron",
+    "category": "car"
+  },
+  "x6m2": {
+    "brand": "Ubermacht",
+    "model": "X6 G06",
+    "category": "car"
+  },
+  "5series": {
+    "brand": "Ubermacht",
+    "model": "5 G60",
+    "category": "car"
+  },
+  "pts21": {
+    "brand": "Pfister",
+    "model": "911 992-series",
+    "category": "car"
+  },
+  "m8gc": {
+    "brand": "Ubermacht",
+    "model": "M8 Gran Coupe",
+    "category": "car"
+  },
+  "toro": {
+    "brand": "Lampadati",
+    "model": "Toro",
+    "category": "boat"
+  },
+  "supervolito2c": {
+    "brand": "Buckingham",
+    "model": "SuperVolito Carbone S",
+    "category": "heli"
+  },
+  "a8": {
+    "brand": "Obey",
+    "model": "A8",
+    "category": "car"
+  },
+  "xk": {
+    "brand": "Buckingham",
+    "model": "XK",
+    "category": "car"
+  },
+  "gle2": {
+    "brand": "Benefactor",
+    "model": "GLE V167",
+    "category": "car"
+  },
+  "e63s": {
+    "brand": "Benefactor",
+    "model": "E-Class W213",
+    "category": "car"
+  },
+  "gtr50": {
+    "brand": "Annis",
+    "model": " GT-R50",
+    "category": "car"
+  },
+  "emira": {
+    "brand": "Ocelot",
+    "model": "Remir",
+    "category": "car"
+  },
+  "x5g05": {
+    "brand": "Ubermacht",
+    "model": "X5 G05",
+    "category": "car"
+  },
+  "m5comp": {
+    "brand": "Ubermacht",
+    "model": "M5 F90 Contention",
+    "category": "car"
+  },
+  "cybertruck": {
+    "brand": "Coil",
+    "model": "Alt-Truck",
+    "category": "truck"
+  },
+  "eqs": {
+    "brand": "Benefactor",
+    "model": "EQS",
+    "category": "car"
+  },
+  "corvette2": {
+    "brand": "Declasse",
+    "model": "Covetto C8",
+    "category": "car"
+  },
+  "lfa": {
+    "brand": "Emperor",
+    "model": "LFA",
+    "category": "car"
+  },
+  "q8": {
+    "brand": "Obey",
+    "model": "Q8",
+    "category": "car"
+  },
+  "rs72": {
+    "brand": "Obey",
+    "model": "RS7 II",
+    "category": "car"
+  },
+  "63gls2": {
+    "brand": "Benefactor",
+    "model": "GLS X167",
+    "category": "car"
+  },
+  "speeder2": {
+    "brand": "Pegassi",
+    "model": "Speeder RT",
+    "category": "boat"
+  },
+  "bmwx7": {
+    "brand": "Ubermacht",
+    "model": "X7 G07",
+    "category": "car"
+  },
+  "r820": {
+    "brand": "Obey",
+    "model": "R8",
+    "category": "car"
+  },
+  "f40": {
+    "brand": "Grotti",
+    "model": "F40",
+    "category": "car"
+  },
+  "ct5": {
+    "brand": "Albany",
+    "model": "CT5",
+    "category": "car"
+  },
+  "supervolitoc": {
+    "brand": "Buckingham",
+    "model": "SuperVolito S",
+    "category": "heli"
+  },
+  "xclass": {
+    "brand": "Benefactor",
+    "model": "X-Class",
+    "category": "truck"
+  },
+  "eclass4": {
+    "brand": "Benefactor",
+    "model": "E-Class S214 Estate",
+    "category": "car"
+  },
+  "ex90": {
+    "brand": "Vulcar",
+    "model": "EX90",
+    "category": "car"
+  },
+  "speeder": {
+    "brand": "Pegassi",
+    "model": "Speeder",
+    "category": "boat"
+  },
+  "s63cab": {
+    "brand": "Benefactor",
+    "model": "S-Class A217",
+    "category": "car"
+  },
+  "g63amg6x6": {
+    "brand": "Benefactor",
+    "model": "G-Class W463 6x6",
+    "category": "truck"
+  },
+  "panamera17turbo": {
+    "brand": "Pfister",
+    "model": "Paramena",
+    "category": "car"
+  },
+  "lil9": {
+    "brand": "Xi Auto",
+    "model": "L9",
+    "category": "car"
+  },
+  "m850": {
+    "brand": "Ubermacht",
+    "model": "8",
+    "category": "car"
+  },
+  "macan2": {
+    "brand": "Pfister",
+    "model": "Mauer EV",
+    "category": "car"
+  },
+  "cle": {
+    "brand": "Benefactor",
+    "model": "CLE C236",
+    "category": "car"
+  },
+  "xts": {
+    "brand": "Albany",
+    "model": "XTS Limo",
+    "category": "car"
+  },
+  "etron": {
+    "brand": "Obey",
+    "model": "I-tron GT",
+    "category": "car"
+  },
+  "hummer2": {
+    "brand": "Mammoth",
+    "model": "Hammer EV 4x4",
+    "category": "truck"
+  },
+  "ram2": {
+    "brand": "Bravado",
+    "model": "RUM TRX",
+    "category": "truck"
+  },
+  "tt2": {
+    "brand": "Obey",
+    "model": "TT 8S Cabrio",
+    "category": "car"
+  },
+  "su7": {
+    "brand": "Lumi",
+    "model": "SU7",
+    "category": "car"
+  },
+  "tt": {
+    "brand": "Obey",
+    "model": "TT S8",
+    "category": "car"
+  },
+  "ast": {
+    "brand": "Dewbauchee",
+    "model": "Wanquish",
+    "category": "car"
+  },
+  "lx600": {
+    "brand": "Emperor",
+    "model": "LX 600",
+    "category": "car"
+  },
+  "cls63s": {
+    "brand": "Benefactor",
+    "model": "CLS C218",
+    "category": "car"
+  },
+  "q7": {
+    "brand": "Obey",
+    "model": "Q7",
+    "category": "car"
+  },
+  "diablo": {
+    "brand": "Pegassi",
+    "model": "Devil",
+    "category": "car"
+  },
+  "hummer3": {
+    "brand": "Mammoth",
+    "model": "Hammer EV 6x6",
+    "category": "truck"
+  },
+  "levante": {
+    "brand": "Lampadati",
+    "model": "Turin",
+    "category": "car"
+  },
+  "bmwm7": {
+    "brand": "Ubermacht",
+    "model": "7 M760Li",
+    "category": "car"
+  },
+  "jetmax": {
+    "brand": "Shitzu",
+    "model": "Jetmax",
+    "category": "boat"
+  },
+  "f1502": {
+    "brand": "Vapid",
+    "model": "F-150 Predator 6X6",
+    "category": "truck"
+  },
+  "glc": {
+    "brand": "Benefactor",
+    "model": "GLC Coupe C254",
+    "category": "car"
+  },
+  "viper": {
+    "brand": "Bravado",
+    "model": "Snake VX",
+    "category": "car"
+  },
+  "s63w222": {
+    "brand": "Benefactor",
+    "model": "S-Class W222",
+    "category": "car"
+  },
+  "hummer": {
+    "brand": "Mammoth",
+    "model": "Hammer EV",
+    "category": "car"
+  },
+  "f150": {
+    "brand": "Vapid",
+    "model": "F-150 Predator",
+    "category": "truck"
+  },
+  "rs6": {
+    "brand": "Obey",
+    "model": "RS6",
+    "category": "car"
+  },
+  "m3g81": {
+    "brand": "Ubermacht",
+    "model": "M3 G81 Touring",
+    "category": "car"
+  },
+  "wrx": {
+    "brand": "Karin",
+    "model": "VRX",
+    "category": "car"
+  },
+  "mustang3": {
+    "brand": "Vapid",
+    "model": "Musthang S650",
+    "category": "car"
+  },
+  "air": {
+    "brand": "Coil",
+    "model": "Jenks",
+    "category": "car"
+  },
+  "luxor2": {
+    "brand": "Buckingham",
+    "model": "Luxor Deluxe",
+    "category": "plane"
+  },
+  "lex570": {
+    "brand": "Emperor",
+    "model": "LX 570",
+    "category": "car"
+  },
+  "c300": {
+    "brand": "Benefactor",
+    "model": "C-Class W206",
+    "category": "car"
+  },
+  "5series2": {
+    "brand": "Ubermacht",
+    "model": "5 G61",
+    "category": "car"
+  },
+  "buzzard2c": {
+    "brand": "Nagasaki",
+    "model": "Buzzard S",
+    "category": "heli"
+  },
+  "testarossa": {
+    "brand": "Grotti",
+    "model": "Ottina",
+    "category": "car"
+  },
+  "brutale": {
+    "brand": "Pegassi",
+    "model": "Brutora",
+    "category": "moto"
+  },
+  "m4comp": {
+    "brand": "Ubermacht",
+    "model": "M4 G82 Contention",
+    "category": "car"
+  },
+  "cls2": {
+    "brand": "Benefactor",
+    "model": "CLS C257",
+    "category": "car"
+  },
+  "ftype": {
+    "brand": "Ocelot",
+    "model": "F-Model R Coupe",
+    "category": "car"
+  },
+  "lc300": {
+    "brand": "Karin",
+    "model": "Grand Cruiser 300",
+    "category": "car"
+  },
+  "nisgtr": {
+    "brand": "Annis",
+    "model": "GT-R R35",
+    "category": "car"
+  },
+  "m2g42": {
+    "brand": "Ubermacht",
+    "model": "2 G42",
+    "category": "car"
+  },
+  "lc150": {
+    "brand": "Karin",
+    "model": "Grand Cruiser Prato 150",
+    "category": "car"
+  },
+  "d8": {
+    "brand": "BF",
+    "model": "D8 GTO",
+    "category": "car"
+  },
+  "i82": {
+    "brand": "Ubermacht",
+    "model": "i8 Roadster",
+    "category": "car"
+  },
+  "zeekr009": {
+    "brand": "Shufu",
+    "model": "009",
+    "category": "car"
+  },
+  "tundra": {
+    "brand": "Karin",
+    "model": "Tundhra",
+    "category": "truck"
+  },
+  "tropic2": {
+    "brand": "Shitzu",
+    "model": "Tropic SW",
+    "category": "boat"
+  },
+  "maloo": {
+    "brand": "HCV",
+    "model": "Malo",
+    "category": "truck"
+  },
+  "corvett08": {
+    "brand": "Declasse",
+    "model": "Covetto C7",
+    "category": "car"
+  },
+  "vclass": {
+    "brand": "Benefactor",
+    "model": "V-Class Veto",
+    "category": "car"
+  },
+  "gladiator": {
+    "brand": "Canis",
+    "model": "Langhals",
+    "category": "truck"
+  },
+  "ix": {
+    "brand": "Ubermacht",
+    "model": "IX",
+    "category": "car"
+  },
+  "audir8": {
+    "brand": "Obey",
+    "model": "R8",
+    "category": "car"
+  },
+  "gle63": {
+    "brand": "Benefactor",
+    "model": "GLE Coupe C292",
+    "category": "car"
+  },
+  "nsx": {
+    "brand": "Dinka",
+    "model": "NSX NC1",
+    "category": "car"
+  },
+  "rc16": {
+    "brand": "KMG",
+    "model": "RC 16",
+    "category": "moto"
+  },
+  "tropic": {
+    "brand": "Shitzu",
+    "model": "Tropic",
+    "category": "boat"
+  },
+  "froggerc": {
+    "brand": "Maibatsu",
+    "model": "Frogger S",
+    "category": "heli"
+  },
+  "sparrowc": {
+    "brand": "HVY",
+    "model": "Sparrow S",
+    "category": "heli"
+  },
+  "hummer6": {
+    "brand": "Mammoth",
+    "model": "Hammer HX",
+    "category": "car"
+  },
+  "rs5": {
+    "brand": "Obey",
+    "model": "RS5",
+    "category": "car"
+  },
+  "s1000rr": {
+    "brand": "Ubermacht",
+    "model": "S1000RR",
+    "category": "moto"
+  },
+  "i8": {
+    "brand": "Ubermacht",
+    "model": "i8",
+    "category": "car"
+  },
+  "718bs": {
+    "brand": "Pfister",
+    "model": "718 S Cabrio",
+    "category": "car"
+  },
+  "z800": {
+    "brand": "Nagasaki",
+    "model": "Z800",
+    "category": "moto"
+  },
+  "rs7": {
+    "brand": "Obey",
+    "model": "RS7",
+    "category": "car"
+  },
+  "v4sp": {
+    "brand": "Principe",
+    "model": "Ranigale V4 Speciale",
+    "category": "moto"
+  },
+  "diavel": {
+    "brand": "Principe",
+    "model": "Diawel",
+    "category": "moto"
+  },
+  "5series3": {
+    "brand": "Ubermacht",
+    "model": "5 F10",
+    "category": "car"
+  },
+  "model3": {
+    "brand": "Coil",
+    "model": "Line 3",
+    "category": "car"
+  },
+  "m4f82": {
+    "brand": "Ubermacht",
+    "model": "M4 F82",
+    "category": "car"
+  },
+  "rc211v": {
+    "brand": "Dinka",
+    "model": "RC211V",
+    "category": "moto"
+  },
+  "eclass5": {
+    "brand": "Benefactor",
+    "model": "E-Class W212",
+    "category": "car"
+  },
+  "z4b": {
+    "brand": "Ubermacht",
+    "model": "Z4 M40i",
+    "category": "car"
+  },
+  "turbor": {
+    "brand": "Quadra",
+    "model": "Turbo-R V-Tech",
+    "category": "car"
+  },
+  "polestar": {
+    "brand": "Vulcar",
+    "model": "Solarstar 1",
+    "category": "car"
+  },
+  "defender": {
+    "brand": "Gallivanter",
+    "model": "Runaway L633",
+    "category": "car"
+  },
+  "f7": {
+    "brand": "Hebei",
+    "model": "F7",
+    "category": "car"
+  },
+  "squalo": {
+    "brand": "Shitzu",
+    "model": "Squalo",
+    "category": "boat"
+  },
+  "phantom": {
+    "brand": "JoBuilt",
+    "model": "Phantom",
+    "category": "truck"
+  },
+  "snowmobile": {
+    "brand": "Speedophile",
+    "model": "Snowshark",
+    "category": "car"
+  },
+  "ev6": {
+    "brand": "Bollokan",
+    "model": "EV6",
+    "category": "car"
+  },
+  "bentley8": {
+    "brand": "Enus",
+    "model": "8 Litre",
+    "category": "car"
+  },
+  "sportage": {
+    "brand": "Bollokan",
+    "model": "Turboweek NQ5",
+    "category": "car"
+  },
+  "x6m": {
+    "brand": "Ubermacht",
+    "model": "X6 M F86",
+    "category": "car"
+  },
+  "velar": {
+    "brand": "Gallivanter",
+    "model": "Gover Velora L560",
+    "category": "car"
+  },
+  "400z": {
+    "brand": "Annis",
+    "model": "400X",
+    "category": "car"
+  },
+  "mustang4": {
+    "brand": "Vapid",
+    "model": "Musthang HG",
+    "category": "car"
+  },
+  "slr2": {
+    "brand": "Benefactor",
+    "model": "SLR",
+    "category": "car"
+  },
+  "models": {
+    "brand": "Coil",
+    "model": "Line S",
+    "category": "car"
+  },
+  "silverado": {
+    "brand": "Declasse",
+    "model": "Tylemo T1XX",
+    "category": "truck"
+  },
+  "63gls": {
+    "brand": "Benefactor",
+    "model": "GLS X166",
+    "category": "car"
+  },
+  "x5me70": {
+    "brand": "Ubermacht",
+    "model": "X5 M E70",
+    "category": "car"
+  },
+  "brz": {
+    "brand": "Karin",
+    "model": "BRZ",
+    "category": "car"
+  },
+  "nsx2": {
+    "brand": "Dinka",
+    "model": "NSX NA1",
+    "category": "car"
+  },
+  "bronco": {
+    "brand": "Vapid",
+    "model": "Frey U725",
+    "category": "car"
+  },
+  "q60s": {
+    "brand": "Fathom",
+    "model": "Q60S",
+    "category": "car"
+  },
+  "macan": {
+    "brand": "Pfister",
+    "model": "Mauer",
+    "category": "car"
+  },
+  "giulia": {
+    "brand": "Lampadati",
+    "model": "Jiulia",
+    "category": "car"
+  },
+  "victoria2": {
+    "brand": "Vapid",
+    "model": "Coronet V GT",
+    "category": "car"
+  },
+  "packer": {
+    "brand": "MTL",
+    "model": "Packer",
+    "category": "truck"
+  },
+  "m12b": {
+    "brand": "AMG",
+    "model": "M12B Warthog",
+    "category": "truck"
+  },
+  "2020mustang": {
+    "brand": "Vapid",
+    "model": "Musthang S550",
+    "category": "car"
+  },
+  "m5e60": {
+    "brand": "Ubermacht",
+    "model": "M5 E60",
+    "category": "car"
+  },
+  "msprinter": {
+    "brand": "Benefactor",
+    "model": "Runner",
+    "category": "truck"
+  },
+  "cla": {
+    "brand": "Benefactor",
+    "model": "CLA",
+    "category": "car"
+  },
+  "maverickc": {
+    "brand": "Buckingham",
+    "model": "Maverick S",
+    "category": "heli"
+  },
+  "express": {
+    "brand": "Declasse",
+    "model": "Cage",
+    "category": "truck"
+  },
+  "fx50s": {
+    "brand": "Fathom",
+    "model": "FX50 S",
+    "category": "car"
+  },
+  "16challenger": {
+    "brand": "Bravado",
+    "model": "Contender",
+    "category": "car"
+  },
+  "modelx": {
+    "brand": "Coil",
+    "model": "Line X",
+    "category": "car"
+  },
+  "rrab": {
+    "brand": "Gallivanter",
+    "model": "Gover L405",
+    "category": "car"
+  },
+  "camaro21": {
+    "brand": "Declasse",
+    "model": "Camairo 1TL",
+    "category": "car"
+  },
+  "350z": {
+    "brand": "Annis",
+    "model": "350Z",
+    "category": "car"
+  },
+  "charger20": {
+    "brand": "Bravado",
+    "model": "Changer SRT",
+    "category": "car"
+  },
+  "ram": {
+    "brand": "Bravado",
+    "model": "RUM 1500",
+    "category": "truck"
+  },
+  "hummer5": {
+    "brand": "Mammoth",
+    "model": "Hammer 4x4",
+    "category": "car"
+  },
+  "dsprinter": {
+    "brand": "Bravado",
+    "model": "Runner",
+    "category": "truck"
+  },
+  "k5": {
+    "brand": "Bollokan",
+    "model": "K-Five",
+    "category": "car"
+  },
+  "gsx1000": {
+    "brand": "Shitzu",
+    "model": "GSX-R 1000",
+    "category": "moto"
+  },
+  "m3e46": {
+    "brand": "Ubermacht",
+    "model": "M3 E46",
+    "category": "car"
+  },
+  "xc90": {
+    "brand": "Vulcar",
+    "model": "XC90",
+    "category": "car"
+  },
+  "hauler": {
+    "brand": "JoBuilt",
+    "model": "Hauler",
+    "category": "truck"
+  },
+  "cesc21": {
+    "brand": "Albany",
+    "model": "Excalibur",
+    "category": "car"
+  },
+  "bmwg20": {
+    "brand": "Ubermacht",
+    "model": "3 G20",
+    "category": "car"
+  },
+  "countryman": {
+    "brand": "Weeny",
+    "model": "Mich",
+    "category": "car"
+  },
+  "suntrap": {
+    "brand": "Shitzu",
+    "model": "Suntrap",
+    "category": "boat"
+  },
+  "chrysler300": {
+    "brand": "Schyster",
+    "model": "Gill 300",
+    "category": "car"
+  },
+  "g55": {
+    "brand": "Benefactor",
+    "model": "G-Class W463",
+    "category": "car"
+  },
+  "tahoe2": {
+    "brand": "Declasse",
+    "model": "Takho",
+    "category": "car"
+  },
+  "gtr32": {
+    "brand": "Annis",
+    "model": "GT-R R32",
+    "category": "car"
+  },
+  "cx5": {
+    "brand": "Annis",
+    "model": "CX-5",
+    "category": "car"
+  },
+  "skyline": {
+    "brand": "Annis",
+    "model": "GT-R R34",
+    "category": "car"
+  },
+  "ml": {
+    "brand": "Benefactor",
+    "model": "ML",
+    "category": "car"
+  },
+  "hotwheels2": {
+    "brand": "Fast Wheels",
+    "model": "Boner",
+    "category": "car"
+  },
+  "touareg": {
+    "brand": "BF",
+    "model": "Twareg",
+    "category": "car"
+  },
+  "aclass2": {
+    "brand": "Benefactor",
+    "model": "A-Class W177",
+    "category": "car"
+  },
+  "xes": {
+    "brand": "Ocelot",
+    "model": "XE-S",
+    "category": "car"
+  },
+  "jgc": {
+    "brand": "Canis",
+    "model": "Great Cherokee",
+    "category": "car"
+  },
+  "explorer": {
+    "brand": "Vapid",
+    "model": "Bucher",
+    "category": "car"
+  },
+  "countach2": {
+    "brand": "Pegassi",
+    "model": "Cauntach",
+    "category": "car"
+  },
+  "viper2": {
+    "brand": "Bravado",
+    "model": "Snake SR II",
+    "category": "car"
+  },
+  "rx8": {
+    "brand": "Annis",
+    "model": "RX-8",
+    "category": "car"
+  },
+  "rr3": {
+    "brand": "Gallivanter",
+    "model": "Gover L322",
+    "category": "car"
+  },
+  "lc200": {
+    "brand": "Karin",
+    "model": "Grand Cruiser 200",
+    "category": "car"
+  },
+  "aclass": {
+    "brand": "Benefactor",
+    "model": "A-Class V177",
+    "category": "car"
+  },
+  "eclipse": {
+    "brand": "Maibatsu",
+    "model": "Sunrise D30",
+    "category": "car"
+  },
+  "kiastinger": {
+    "brand": "Bollokan",
+    "model": "Sprinter",
+    "category": "car"
+  },
+  "yz450f": {
+    "brand": "Shitzu",
+    "model": "YZ 450 F",
+    "category": "moto"
+  },
+  "defender2": {
+    "brand": "Gallivanter",
+    "model": "Runaway",
+    "category": "car"
+  },
+  "supragr": {
+    "brand": "Karin",
+    "model": "GR Superia",
+    "category": "car"
+  },
+  "rx7": {
+    "brand": "Annis",
+    "model": "RX-7",
+    "category": "car"
+  },
+  "370z": {
+    "brand": "Annis",
+    "model": "370Z",
+    "category": "car"
+  },
+  "golf3": {
+    "brand": "BF",
+    "model": "Wolf Mk 8",
+    "category": "car"
+  },
+  "durango": {
+    "brand": "Bravado",
+    "model": "Myles",
+    "category": "car"
+  },
+  "touareg2": {
+    "brand": "BF",
+    "model": "Twareg R50",
+    "category": "car"
+  },
+  "creta": {
+    "brand": "Bollokan",
+    "model": "Cretia",
+    "category": "car"
+  },
+  "a80": {
+    "brand": "Karin",
+    "model": "Superia",
+    "category": "car"
+  },
+  "s15": {
+    "brand": "Annis",
+    "model": "Slivia S15",
+    "category": "car"
+  },
+  "s2000": {
+    "brand": "Dinka",
+    "model": "S2000",
+    "category": "car"
+  },
+  "charger3": {
+    "brand": "Bravado",
+    "model": "Changer FF",
+    "category": "car"
+  },
+  "mark2": {
+    "brand": "Karin",
+    "model": "Marco II 100",
+    "category": "car"
+  },
+  "syclone": {
+    "brand": "Mammoth",
+    "model": "Neilsen",
+    "category": "truck"
+  },
+  "evo10": {
+    "brand": "Maibatsu",
+    "model": "Lance Revolution X",
+    "category": "car"
+  },
+  "camry70": {
+    "brand": "Karin",
+    "model": "Camria XV70",
+    "category": "car"
+  },
+  "focusrs": {
+    "brand": "Vapid",
+    "model": "Fox RS",
+    "category": "car"
+  },
+  "camry2": {
+    "brand": "Karin",
+    "model": "Camria XV55",
+    "category": "car"
+  },
+  "delorean": {
+    "brand": "Imponte",
+    "model": "DMC-12",
+    "category": "car"
+  },
+  "bmwm1": {
+    "brand": "Ubermacht",
+    "model": "M1",
+    "category": "car"
+  },
+  "guardian": {
+    "brand": "Vapid",
+    "model": "Guardian",
+    "category": "car"
+  },
+  "evo9": {
+    "brand": "Maibatsu",
+    "model": "Lance Revolution IX",
+    "category": "car"
+  },
+  "slr": {
+    "brand": "Benefactor",
+    "model": "300 SLR",
+    "category": "car"
+  },
+  "mazda3": {
+    "brand": "Annis",
+    "model": "3 BM",
+    "category": "car"
+  },
+  "nspeedo": {
+    "brand": "Vapid",
+    "model": "Speedo Express",
+    "category": "truck"
+  },
+  "db5": {
+    "brand": "Dewbauchee",
+    "model": "DB5",
+    "category": "car"
+  },
+  "firebird": {
+    "brand": "Imponte",
+    "model": "KITT",
+    "category": "car"
+  },
+  "mjc": {
+    "brand": "Weeny",
+    "model": "Copper",
+    "category": "car"
+  },
+  "astra": {
+    "brand": "Bollokan",
+    "model": "Rose J GTC",
+    "category": "car"
+  },
+  "w210": {
+    "brand": "Benefactor",
+    "model": "E-Class W210",
+    "category": "car"
+  },
+  "bmwe39": {
+    "brand": "Ubermacht",
+    "model": "5 E39",
+    "category": "car"
+  },
+  "mx5": {
+    "brand": "Annis",
+    "model": "MX-5",
+    "category": "car"
+  },
+  "p928": {
+    "brand": "Pfister",
+    "model": "928",
+    "category": "car"
+  },
+  "a42": {
+    "brand": "Obey",
+    "model": "80 B4",
+    "category": "car"
+  },
+  "golf7r": {
+    "brand": "BF",
+    "model": "Wolf Mk 7",
+    "category": "car"
+  },
+  "carrera": {
+    "brand": "Pfister",
+    "model": "Carcio 911",
+    "category": "car"
+  },
+  "accord": {
+    "brand": "Dinka",
+    "model": "Paccord",
+    "category": "car"
+  },
+  "subwrx": {
+    "brand": "Karin",
+    "model": "Impresa VRX",
+    "category": "car"
+  },
+  "s600": {
+    "brand": "Benefactor",
+    "model": "S-Class W140",
+    "category": "car"
+  },
+  "bmwe38": {
+    "brand": "Ubermacht",
+    "model": "7 E38",
+    "category": "car"
+  },
+  "dinghy": {
+    "brand": "Nagasaki",
+    "model": "Dinghy MK4",
+    "category": "boat"
+  },
+  "polbuz": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "polbuz2": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "polbuz3": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "polbuz4": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "polbuz5": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "polbuz6": {
+    "brand": "Nagasaki",
+    "model": "Buzzard",
+    "category": "heli"
+  },
+  "f1503": {
+    "brand": "Vapid",
+    "model": "F-150",
+    "category": "truck"
+  },
+  "victoria": {
+    "brand": "Vapid",
+    "model": "Coronet V",
+    "category": "car"
+  },
+  "gnx": {
+    "brand": "Willard",
+    "model": "GNX",
+    "category": "car"
+  },
+  "cclass2": {
+    "brand": "Benefactor",
+    "model": "C-Class W203",
+    "category": "car"
+  },
+  "wrangler": {
+    "brand": "Canis",
+    "model": "JW",
+    "category": "car"
+  },
+  "taurus": {
+    "brand": "Vapid",
+    "model": "Deming",
+    "category": "car"
+  },
+  "octavia18": {
+    "brand": "BF",
+    "model": "Olivia RS",
+    "category": "car"
+  },
+  "civic2": {
+    "brand": "Dinka",
+    "model": "Hiroshi FK2",
+    "category": "car"
+  },
+  "corvette3": {
+    "brand": "Declasse",
+    "model": "Covetto C1",
+    "category": "car"
+  },
+  "rsx": {
+    "brand": "Dinka",
+    "model": "RSX",
+    "category": "car"
+  },
+  "fairlady": {
+    "brand": "Annis",
+    "model": "Firelady 240Z",
+    "category": "car"
+  },
+  "mule": {
+    "brand": "Maibatsu",
+    "model": "Mule",
+    "category": "truck"
+  },
+  "mustang2": {
+    "brand": "Vapid",
+    "model": "Musthang `69",
+    "category": "car"
+  },
+  "charger2": {
+    "brand": "Bravado",
+    "model": "Changer",
+    "category": "car"
+  },
+  "paradise": {
+    "brand": "Bravado",
+    "model": "Paradise",
+    "category": "truck"
+  },
+  "benson": {
+    "brand": "Vapid",
+    "model": "Benson",
+    "category": "car"
+  },
+  "polo": {
+    "brand": "BF",
+    "model": "Marce 6R",
+    "category": "car"
+  },
+  "a4": {
+    "brand": "Obey",
+    "model": "A4 B5",
+    "category": "car"
+  },
+  "camaro2": {
+    "brand": "Declasse",
+    "model": "Camairo `70",
+    "category": "car"
+  },
+  "urban": {
+    "brand": "RUNE",
+    "model": "Niwa",
+    "category": "car"
+  },
+  "firebird2": {
+    "brand": "Imponte",
+    "model": "Fairbird",
+    "category": "car"
+  },
+  "camaro3": {
+    "brand": "Declasse",
+    "model": "Camairo `67",
+    "category": "car"
+  },
+  "galant": {
+    "brand": "Maibatsu",
+    "model": "Shinichi",
+    "category": "car"
+  },
+  "rio": {
+    "brand": "Bollokan",
+    "model": "Rino FB",
+    "category": "car"
+  },
+  "pony2": {
+    "brand": "Brute",
+    "model": "Pony",
+    "category": "truck"
+  },
+  "pounder": {
+    "brand": "MTL",
+    "model": "Pounder",
+    "category": "car"
+  },
+  "rio2": {
+    "brand": "Bollokan",
+    "model": "Rino QB Sedan",
+    "category": "car"
+  },
+  "rio3": {
+    "brand": "Bollokan",
+    "model": "Rino QB 5-doors",
+    "category": "car"
+  },
+  "logan": {
+    "brand": "Penaud",
+    "model": "Loghan",
+    "category": "car"
+  },
+  "impala": {
+    "brand": "Declasse",
+    "model": "Implata SN",
+    "category": "car"
+  },
+  "190e": {
+    "brand": "Benefactor",
+    "model": "190 E",
+    "category": "car"
+  },
+  "vesta": {
+    "brand": "RUNE",
+    "model": "Westa",
+    "category": "car"
+  },
+  "ae862": {
+    "brand": "Karin",
+    "model": "Corona Hachiroku",
+    "category": "car"
+  },
+  "dinghy2": {
+    "brand": "Nagasaki",
+    "model": "Dinghy MK2",
+    "category": "boat"
+  },
+  "solaris": {
+    "brand": "Bollokan",
+    "model": "Lunar I",
+    "category": "car"
+  },
+  "3series3": {
+    "brand": "Ubermacht",
+    "model": "3-Series E30",
+    "category": "car"
+  },
+  "ae86": {
+    "brand": "Karin",
+    "model": "Runner Hachiroku",
+    "category": "car"
+  },
+  "riot2": {
+    "brand": "Brute ",
+    "model": "Riot RCV",
+    "category": "car"
+  },
+  "modelt": {
+    "brand": "Vapid",
+    "model": "Line T",
+    "category": "car"
+  },
+  "priora": {
+    "brand": "RUNE",
+    "model": "Prior",
+    "category": "car"
+  },
+  "barracuda": {
+    "brand": "Imponte",
+    "model": "Herlitz",
+    "category": "car"
+  },
+  "riot": {
+    "brand": "Brute ",
+    "model": "Riot",
+    "category": "car"
+  },
+  "burrito3": {
+    "brand": "Declasse",
+    "model": "Burrito",
+    "category": "truck"
+  },
+  "seashark3": {
+    "brand": "Speedophile",
+    "model": "Seashark Astro",
+    "category": "boat"
+  },
+  "samara": {
+    "brand": "RUNE",
+    "model": "2114",
+    "category": "car"
+  },
+  "civic": {
+    "brand": "Dinka",
+    "model": "Hiroshi EK6",
+    "category": "car"
+  },
+  "impala2": {
+    "brand": "Declasse",
+    "model": "Implata",
+    "category": "car"
+  },
+  "peugeot308": {
+    "brand": "Armand",
+    "model": "308",
+    "category": "car"
+  },
+  "virtue": {
+    "brand": "Ocelot",
+    "model": "Virtue",
+    "category": "car"
+  },
+  "youga": {
+    "brand": "Bravado",
+    "model": "Youga",
+    "category": "truck"
+  },
+  "bison4": {
+    "brand": "Bravado",
+    "model": "Bison 4",
+    "category": "car"
+  },
+  "italirsx": {
+    "brand": "Grotti",
+    "model": "Itali RSX",
+    "category": "car"
+  },
+  "torero2": {
+    "brand": "Pegassi",
+    "model": "Torero XO",
+    "category": "car"
+  },
+  "polmav": {
+    "brand": "Buckingham",
+    "model": "Maverick",
+    "category": "heli"
+  },
+  "krieger": {
+    "brand": "Benefactor",
+    "model": "Krieger",
+    "category": "car"
+  },
+  "vaz2109": {
+    "brand": "RUNE",
+    "model": "2109",
+    "category": "car"
+  },
+  "emerus": {
+    "brand": "Progen",
+    "model": "Emerus",
+    "category": "car"
+  },
+  "ignus": {
+    "brand": "Pegassi",
+    "model": "Ignus",
+    "category": "car"
+  },
+  "paragon3": {
+    "brand": "Enus",
+    "model": "Paragon S",
+    "category": "car"
+  },
+  "jackgpr": {
+    "brand": "Ocelot",
+    "model": "Jackal Custom",
+    "category": "car"
+  },
+  "pipistrello": {
+    "brand": "Overflod",
+    "model": "Pipistrello",
+    "category": "car"
+  },
+  "prototipo": {
+    "brand": "Grotti",
+    "model": "X80 Proto",
+    "category": "car"
+  },
+  "tigon": {
+    "brand": "Lampadati",
+    "model": "Tigon",
+    "category": "car"
+  },
+  "turismo3": {
+    "brand": "Grotti",
+    "model": "Turismo Omaggio",
+    "category": "car"
+  },
+  "tenf2": {
+    "brand": "Obey",
+    "model": "10F Widebody",
+    "category": "car"
+  },
+  "pariah": {
+    "brand": "Ocelot",
+    "model": "Pariah",
+    "category": "car"
+  },
+  "thrax": {
+    "brand": "Truffade",
+    "model": "Thrax",
+    "category": "car"
+  },
+  "bison": {
+    "brand": "Bravado",
+    "model": "Bison",
+    "category": "truck"
+  },
+  "italigto": {
+    "brand": "Grotti",
+    "model": "Itali GTO",
+    "category": "car"
+  },
+  "cyclone": {
+    "brand": "Coil",
+    "model": "Cyclone",
+    "category": "car"
+  },
+  "vagner": {
+    "brand": "Dewbauchee",
+    "model": "Vagner",
+    "category": "car"
+  },
+  "zeno": {
+    "brand": "Overflod",
+    "model": "Zeno",
+    "category": "car"
+  },
+  "entity2": {
+    "brand": "Overflod",
+    "model": "Entity XXR",
+    "category": "car"
+  },
+  "pfister811": {
+    "brand": "Pfister",
+    "model": "811",
+    "category": "car"
+  },
+  "nero": {
+    "brand": "Truffade",
+    "model": "Nero",
+    "category": "car"
+  },
+  "nero2": {
+    "brand": "Truffade",
+    "model": "Nero Custom",
+    "category": "car"
+  },
+  "tezeract": {
+    "brand": "Pegassi",
+    "model": "Tezeract",
+    "category": "car"
+  },
+  "tyrant": {
+    "brand": "Overflod",
+    "model": "Tyrant",
+    "category": "car"
+  },
+  "zentorno": {
+    "brand": "Pegassi",
+    "model": "Zentorno",
+    "category": "car"
+  },
+  "openwheel1": {
+    "brand": "Benefactor",
+    "model": "BR8",
+    "category": "car"
+  },
+  "italigtb": {
+    "brand": "Progen",
+    "model": "Itali GTB",
+    "category": "car"
+  },
+  "italigtb2": {
+    "brand": "Progen",
+    "model": "Itali GTB Custom",
+    "category": "car"
+  },
+  "zorrusso": {
+    "brand": "Pegassi",
+    "model": "Zorrusso",
+    "category": "car"
+  },
+  "tenf": {
+    "brand": "Obey",
+    "model": "10F",
+    "category": "car"
+  },
+  "formula": {
+    "brand": "Progen",
+    "model": "PR4",
+    "category": "car"
+  },
+  "tempesta": {
+    "brand": "Pegassi",
+    "model": "Tempesta",
+    "category": "car"
+  },
+  "neo": {
+    "brand": "Vysser",
+    "model": "Neo",
+    "category": "car"
+  },
+  "visione": {
+    "brand": "Grotti",
+    "model": "Visione",
+    "category": "car"
+  },
+  "lm87": {
+    "brand": "Benefactor",
+    "model": "LM87",
+    "category": "car"
+  },
+  "t20": {
+    "brand": "Progen",
+    "model": "T20",
+    "category": "car"
+  },
+  "xa21": {
+    "brand": "Ocelot",
+    "model": "XA-21",
+    "category": "car"
+  },
+  "vstr": {
+    "brand": "Albany",
+    "model": "V-STR",
+    "category": "car"
+  },
+  "furia": {
+    "brand": "Grotti",
+    "model": "Furia",
+    "category": "car"
+  },
+  "weevil2": {
+    "brand": "BF",
+    "model": "Weevil Custom",
+    "category": "car"
+  },
+  "osiris": {
+    "brand": "Pegassi",
+    "model": "Osiris",
+    "category": "car"
+  },
+  "formula2": {
+    "brand": "Ocelot",
+    "model": "R88",
+    "category": "car"
+  },
+  "corsita": {
+    "brand": "Lampadati",
+    "model": "Corsita",
+    "category": "car"
+  },
+  "entityxf": {
+    "brand": "Overflod",
+    "model": "Entity XF",
+    "category": "car"
+  },
+  "gp1": {
+    "brand": "Progen",
+    "model": "GP1",
+    "category": "car"
+  },
+  "castigator": {
+    "brand": "Canis",
+    "model": "Castigator",
+    "category": "car"
+  },
+  "pentrogpr": {
+    "brand": "Maibatsu",
+    "model": "Penumbra Retro Custom",
+    "category": "car"
+  },
+  "pentrogpr2": {
+    "brand": "Maibatsu",
+    "model": "Penumbra Retro S-Custom",
+    "category": "car"
+  },
+  "champion": {
+    "brand": "Dewbauchee",
+    "model": "Champion",
+    "category": "car"
+  },
+  "comet7": {
+    "brand": "Pfister",
+    "model": "Comet S2 Cabrio",
+    "category": "car"
+  },
+  "openwheel2": {
+    "brand": "Declasse",
+    "model": "DR1",
+    "category": "car"
+  },
+  "toros": {
+    "brand": "Pegassi",
+    "model": "Toros",
+    "category": "car"
+  },
+  "schlagen": {
+    "brand": "Benefactor",
+    "model": "Schlagen GT",
+    "category": "car"
+  },
+  "tyrus": {
+    "brand": "Progen",
+    "model": "Tyrus",
+    "category": "car"
+  },
+  "seashark": {
+    "brand": "Speedophile",
+    "model": "Seashark",
+    "category": "boat"
+  },
+  "bulletems": {
+    "brand": "Vapid",
+    "model": "Bullet",
+    "category": "car"
+  },
+  "coquetteems": {
+    "brand": "Invetero",
+    "model": "Coquette",
+    "category": "car"
+  },
+  "dominator3ems": {
+    "brand": "Vapid",
+    "model": "Dominator GTX",
+    "category": "car"
+  },
+  "vigero2ems": {
+    "brand": "Declasse",
+    "model": "Vigero ZX",
+    "category": "car"
+  },
+  "tor_police_buffalo": {
+    "brand": "Bravado",
+    "model": "Buffalo",
+    "category": "car"
+  },
+  "tor_police_contender": {
+    "brand": "Vapid",
+    "model": "Contender",
+    "category": "car"
+  },
+  "tor_police_cruiser": {
+    "brand": "Vapid",
+    "model": "Stanier",
+    "category": "car"
+  },
+  "tor_police_cruiser2": {
+    "brand": "Vapid",
+    "model": "Interceptor",
+    "category": "car"
+  },
+  "tor_police_insurgent": {
+    "brand": "HVY",
+    "model": "Insurgent",
+    "category": "car"
+  },
+  "tor_police_scout": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "tor_police_scout_k9": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "tor_police_speedo": {
+    "brand": "Vapid",
+    "model": "Speedo",
+    "category": "car"
+  },
+  "tor_police_speedunit": {
+    "brand": "Bravado",
+    "model": "Gauntlet Hellfire",
+    "category": "car"
+  },
+  "tor_sheriff_cruiser": {
+    "brand": "Vapid",
+    "model": "Cruiser",
+    "category": "car"
+  },
+  "tor_sheriff_cheval": {
+    "brand": "Bravado",
+    "model": "Cheval",
+    "category": "car"
+  },
+  "tor_sheriff_granger": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "tor_sheriff_insurgent": {
+    "brand": "HVY",
+    "model": "Insurgent",
+    "category": "car"
+  },
+  "tor_sheriff_scout": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "tor_sheriff_scout_k9": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "tor_sheriff_speedunit": {
+    "brand": "Bravado",
+    "model": "Gauntlet Hellfire",
+    "category": "car"
+  },
+  "tor_sheriff_unmarked": {
+    "brand": "Vapid",
+    "model": "Cruiser",
+    "category": "car"
+  },
+  "tor_sang_insurgent": {
+    "brand": "HVY",
+    "model": "Insurgent",
+    "category": "car"
+  },
+  "tor_fib_insurgent": {
+    "brand": "HVY",
+    "model": "Insurgent",
+    "category": "car"
+  },
+  "tor_fib_armor1": {
+    "brand": "Benefactor",
+    "model": "XLS",
+    "category": "car"
+  },
+  "tor_fib_jugular": {
+    "brand": "Ocelot",
+    "model": "Jugular",
+    "category": "car"
+  },
+  "tor_fib_speedo": {
+    "brand": "Vapid",
+    "model": "Speedo",
+    "category": "car"
+  },
+  "tor_fib_neon": {
+    "brand": "Pfister",
+    "model": "Neon",
+    "category": "car"
+  },
+  "tor_fib_novak": {
+    "brand": "Lampadati",
+    "model": "Novak",
+    "category": "car"
+  },
+  "tor_fib_caracara": {
+    "brand": "Vapid",
+    "model": "Caracara",
+    "category": "car"
+  },
+  "tor_fib_gresley": {
+    "brand": "Bravado",
+    "model": "Gresley",
+    "category": "car"
+  },
+  "tor_unmarked_scout": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "tor_fib_speedunit": {
+    "brand": "Bravado",
+    "model": "Gauntlet Hellfire",
+    "category": "car"
+  },
+  "tor_fib_speedunit1": {
+    "brand": "Vapid",
+    "model": "Dominator GTX",
+    "category": "car"
+  },
+  "bcat": {
+    "brand": "Vapid",
+    "model": "Tarv",
+    "category": "car"
+  },
+  "emsnspeedo": {
+    "brand": "Vapid",
+    "model": "Speedo N",
+    "category": "car"
+  },
+  "emsroamer": {
+    "brand": "Dundreary",
+    "model": "Landroamer",
+    "category": "car"
+  },
+  "pscoutnew": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "swatstalker": {
+    "brand": "Dundreary",
+    "model": "Landstalker XL",
+    "category": "car"
+  },
+  "matiz": {
+    "brand": "Weeny",
+    "model": "Maxiz",
+    "category": "car"
+  },
+  "vaz2107": {
+    "brand": "RUNE",
+    "model": "2107",
+    "category": "car"
+  },
+  "mustang5": {
+    "brand": "Vapid",
+    "model": "Musthang `65",
+    "category": "car"
+  },
+  "amazon": {
+    "brand": "Vulcar",
+    "model": "Amason",
+    "category": "car"
+  },
+  "komoda": {
+    "brand": "Lampadati",
+    "model": "Komoda",
+    "category": "car"
+  },
+  "neon": {
+    "brand": "Pfister",
+    "model": "Neon",
+    "category": "car"
+  },
+  "deveste": {
+    "brand": "Principe",
+    "model": "Deveste Eight",
+    "category": "car"
+  },
+  "fmj": {
+    "brand": "Vapid",
+    "model": "FMJ",
+    "category": "car"
+  },
+  "reaper": {
+    "brand": "Pegassi",
+    "model": "Reaper",
+    "category": "car"
+  },
+  "sm722": {
+    "brand": "Benefactor",
+    "model": "SM722",
+    "category": "car"
+  },
+  "entity3": {
+    "brand": "Overflod",
+    "model": "Entity MT",
+    "category": "car"
+  },
+  "jester5": {
+    "brand": "Dinka",
+    "model": "Jester (Vanilla)",
+    "category": "car"
+  },
+  "coquette4": {
+    "brand": "Invetero",
+    "model": "Coquette D10",
+    "category": "car"
+  },
+  "panthere": {
+    "brand": "Toundra",
+    "model": "Panthere",
+    "category": "car"
+  },
+  "rhinehart": {
+    "brand": "Ubermacht",
+    "model": "Rhinehart",
+    "category": "car"
+  },
+  "raiden": {
+    "brand": "Coil",
+    "model": "Raiden",
+    "category": "car"
+  },
+  "turismor": {
+    "brand": "Grotti",
+    "model": "Turismo R",
+    "category": "car"
+  },
+  "schafter3": {
+    "brand": "Benefactor",
+    "model": "Schafter V12",
+    "category": "car"
+  },
+  "envisage": {
+    "brand": "Bollokan",
+    "model": "Envisage",
+    "category": "car"
+  },
+  "sultanrs": {
+    "brand": "Karin",
+    "model": "Sultan RS",
+    "category": "car"
+  },
+  "taipan": {
+    "brand": "Cheval",
+    "model": "Taipan",
+    "category": "car"
+  },
+  "carbonizzare": {
+    "brand": "Grotti",
+    "model": "Carbonizzare",
+    "category": "car"
+  },
+  "rebla": {
+    "brand": "Ubermacht",
+    "model": "Rebla GTS",
+    "category": "car"
+  },
+  "massacro": {
+    "brand": "Dewbauchee",
+    "model": "Massacro",
+    "category": "car"
+  },
+  "massacro2": {
+    "brand": "Dewbauchee",
+    "model": "Massacro (Racecar)",
+    "category": "car"
+  },
+  "comet6": {
+    "brand": "Pfister",
+    "model": "Comet S2",
+    "category": "car"
+  },
+  "everon2": {
+    "brand": "Karin",
+    "model": "Hotring Everon",
+    "category": "car"
+  },
+  "penetrator": {
+    "brand": "Ocelot",
+    "model": "Penetrator",
+    "category": "car"
+  },
+  "bestiagts": {
+    "brand": "Grotti",
+    "model": "Bestia GTS",
+    "category": "car"
+  },
+  "calico": {
+    "brand": "Karin",
+    "model": "Calico GTF",
+    "category": "car"
+  },
+  "jester4": {
+    "brand": "Dinka",
+    "model": "Jester RR",
+    "category": "car"
+  },
+  "ferocid": {
+    "brand": "Bravado",
+    "model": "Feroci Custom",
+    "category": "car"
+  },
+  "cheetah": {
+    "brand": "Grotti",
+    "model": "Cheetah",
+    "category": "car"
+  },
+  "pbus2": {
+    "brand": "Vapid",
+    "model": "Festival Bus",
+    "category": "car"
+  },
+  "growler": {
+    "brand": "Pfister",
+    "model": "Growler",
+    "category": "car"
+  },
+  "seven70": {
+    "brand": "Dewbauchee",
+    "model": "Seven-70",
+    "category": "car"
+  },
+  "gauntlet6": {
+    "brand": "Bravado",
+    "model": "Hotring Hellfire",
+    "category": "car"
+  },
+  "baller8": {
+    "brand": "Gallivanter",
+    "model": "Baller ST-D",
+    "category": "car"
+  },
+  "novak": {
+    "brand": "Lampadati",
+    "model": "Novak",
+    "category": "car"
+  },
+  "schafter5": {
+    "brand": "Benefactor",
+    "model": "Schafter V12 (Armored)",
+    "category": "car"
+  },
+  "sc1": {
+    "brand": "Ubermacht",
+    "model": "SC1",
+    "category": "car"
+  },
+  "autarch": {
+    "brand": "Overflod",
+    "model": "Autarch",
+    "category": "car"
+  },
+  "infernus": {
+    "brand": "Pegassi",
+    "model": "Infernus",
+    "category": "car"
+  },
+  "le7b": {
+    "brand": "Annis",
+    "model": "RE-7B",
+    "category": "car"
+  },
+  "cinquemila": {
+    "brand": "Lampadati",
+    "model": "Cinquemila",
+    "category": "car"
+  },
+  "adder": {
+    "brand": "Truffade",
+    "model": "Adder",
+    "category": "car"
+  },
+  "s80": {
+    "brand": "Annis",
+    "model": "S80RR",
+    "category": "car"
+  },
+  "vacca": {
+    "brand": "Pegassi",
+    "model": "Vacca",
+    "category": "car"
+  },
+  "stingertt": {
+    "brand": "Grotti",
+    "model": "Itali GTO Stinger TT",
+    "category": "car"
+  },
+  "surano": {
+    "brand": "Benefactor",
+    "model": "Surano",
+    "category": "car"
+  },
+  "sheava": {
+    "brand": "Emperor",
+    "model": "ETR1",
+    "category": "car"
+  },
+  "coquette5": {
+    "brand": "Invetero",
+    "model": "Coquette D1",
+    "category": "car"
+  },
+  "ztype": {
+    "brand": "Truffade",
+    "model": "Z-Type",
+    "category": "car"
+  },
+  "buffalo4": {
+    "brand": "Bravado",
+    "model": "Buffalo STX",
+    "category": "car"
+  },
+  "banshee2": {
+    "brand": "Bravado",
+    "model": "Banshee 900R",
+    "category": "car"
+  },
+  "zr380s": {
+    "brand": "Annis",
+    "model": "ZR-380",
+    "category": "car"
+  },
+  "scout": {
+    "brand": "Vapid",
+    "model": "Scout",
+    "category": "car"
+  },
+  "jester3": {
+    "brand": "Dinka",
+    "model": "Jester Classic",
+    "category": "car"
+  },
+  "sentinel4": {
+    "brand": "Ubermacht",
+    "model": "Sentinel Classic Widebody",
+    "category": "car"
+  },
+  "terminus": {
+    "brand": "Canis",
+    "model": "Terminus",
+    "category": "car"
+  },
+  "lynx": {
+    "brand": "Ocelot",
+    "model": "Lynx",
+    "category": "car"
+  },
+  "locust": {
+    "brand": "Ocelot",
+    "model": "Locust",
+    "category": "car"
+  },
+  "rapidgt": {
+    "brand": "Dewbauchee",
+    "model": "Rapid GT",
+    "category": "car"
+  },
+  "rapidgt2": {
+    "brand": "Dewbauchee",
+    "model": "Rapid GT",
+    "category": "car"
+  },
+  "cheetah2": {
+    "brand": "Grotti",
+    "model": "Cheetah Classic",
+    "category": "car"
+  },
+  "comet5": {
+    "brand": "Pfister",
+    "model": "Comet SR",
+    "category": "car"
+  },
+  "furoregt": {
+    "brand": "Lampadati",
+    "model": "Furore GT",
+    "category": "car"
+  },
+  "imorgon": {
+    "brand": "Overflod",
+    "model": "Imorgon",
+    "category": "car"
+  },
+  "specter2": {
+    "brand": "Dewbauchee",
+    "model": "Specter Custom",
+    "category": "car"
+  },
+  "insurgent": {
+    "brand": "HVY",
+    "model": "Insurgent Pick-Up",
+    "category": "car"
+  },
+  "insurgent3": {
+    "brand": "HVY",
+    "model": "Insurgent Pick-Up Custom",
+    "category": "car"
+  },
+  "vorschlaghammer": {
+    "brand": "Benefactor",
+    "model": "Vorschlaghammer",
+    "category": "car"
+  },
+  "jester2": {
+    "brand": "Dinka",
+    "model": "Jester (Racecar)",
+    "category": "car"
+  },
+  "niobe": {
+    "brand": "Ubermacht",
+    "model": "Niobe",
+    "category": "car"
+  },
+  "ninef": {
+    "brand": "Obey",
+    "model": "9F",
+    "category": "car"
+  },
+  "ninef2": {
+    "brand": "Obey",
+    "model": "9F Cabrio",
+    "category": "car"
+  },
+  "zr380c": {
+    "brand": "Annis",
+    "model": "ZR-380 Custom",
+    "category": "car"
+  },
+  "gauntlet4": {
+    "brand": "Bravado",
+    "model": "Gauntlet Hellfire",
+    "category": "car"
+  },
+  "r300": {
+    "brand": "Annis",
+    "model": "300R",
+    "category": "car"
+  },
+  "coquette": {
+    "brand": "Invetero",
+    "model": "Coquette",
+    "category": "car"
+  },
+  "verlierer2": {
+    "brand": "Bravado",
+    "model": "Verlierer",
+    "category": "car"
+  },
+  "sultan3": {
+    "brand": "Karin",
+    "model": "Sultan RS Classic",
+    "category": "car"
+  },
+  "monroe": {
+    "brand": "Pegassi",
+    "model": "Monroe",
+    "category": "car"
+  },
+  "insurgent2": {
+    "brand": "HVY",
+    "model": "Insurgent",
+    "category": "car"
+  },
+  "sultan2": {
+    "brand": "Karin",
+    "model": "Sultan Classic",
+    "category": "car"
+  },
+  "omnisegt": {
+    "brand": "Obey",
+    "model": "Omnis e-GT",
+    "category": "car"
+  },
+  "rapidgt3": {
+    "brand": "Dewbauchee",
+    "model": "Rapid GT Classic",
+    "category": "car"
+  },
+  "astron": {
+    "brand": "Pfister",
+    "model": "Astron",
+    "category": "car"
+  },
+  "specter": {
+    "brand": "Dewbauchee",
+    "model": "Specter",
+    "category": "car"
+  },
+  "viseris": {
+    "brand": "Lampadati",
+    "model": "Viseris",
+    "category": "car"
+  },
+  "comet2": {
+    "brand": "Pfister",
+    "model": "Comet",
+    "category": "car"
+  },
+  "feltzer2": {
+    "brand": "Benefactor",
+    "model": "Feltzer",
+    "category": "car"
+  },
+  "paragon": {
+    "brand": "Enus",
+    "model": "Paragon R",
+    "category": "car"
+  },
+  "sugoi": {
+    "brand": "Dinka",
+    "model": "Sugoi",
+    "category": "car"
+  },
+  "comet3": {
+    "brand": "Pfister",
+    "model": "Comet Retro Custom",
+    "category": "car"
+  },
+  "revolter": {
+    "brand": "Ubermacht",
+    "model": "Revolter",
+    "category": "car"
+  },
+  "dominator9": {
+    "brand": "Vapid",
+    "model": "Dominator GT",
+    "category": "car"
+  },
+  "fr36": {
+    "brand": "Fathom",
+    "model": "FR36",
+    "category": "car"
+  },
+  "drafter": {
+    "brand": "Obey",
+    "model": "8F Drafter",
+    "category": "car"
+  },
+  "powersurge": {
+    "brand": "Western",
+    "model": "Powersurge",
+    "category": "moto"
+  },
+  "paragon2": {
+    "brand": "Enus",
+    "model": "Paragon R Armorr",
+    "category": "car"
+  },
+  "sigma2": {
+    "brand": "Karin",
+    "model": "Sigma-Two",
+    "category": "car"
+  },
+  "alpha": {
+    "brand": "Albany",
+    "model": "Alpha",
+    "category": "car"
+  },
+  "comet4": {
+    "brand": "Pfister",
+    "model": "Comet Safari",
+    "category": "car"
+  },
+  "jester": {
+    "brand": "Dinka",
+    "model": "Jester",
+    "category": "car"
+  },
+  "deluxo": {
+    "brand": "Imponte",
+    "model": "Deluxo",
+    "category": "car"
+  },
+  "casco": {
+    "brand": "Lampadati",
+    "model": "Casco",
+    "category": "car"
+  },
+  "elegy2": {
+    "brand": "Annis",
+    "model": "Elegy RH8",
+    "category": "car"
+  },
+  "pigalle": {
+    "brand": "Lampadati",
+    "model": "Pigalle",
+    "category": "car"
+  },
+  "swinger": {
+    "brand": "Ocelot",
+    "model": "Swinger",
+    "category": "car"
+  },
+  "vincent2": {
+    "brand": "Maibatsu",
+    "model": "Vincent Sport",
+    "category": "car"
+  },
+  "vagrant": {
+    "brand": "Maxwell",
+    "model": "Vagrant",
+    "category": "car"
+  },
+  "hotring": {
+    "brand": "Declasse",
+    "model": "Hotring Sabre",
+    "category": "car"
+  },
+  "zionks": {
+    "brand": "Benefactor",
+    "model": "Zion Classic Krieger Specials",
+    "category": "car"
+  },
+  "windsor": {
+    "brand": "Enus",
+    "model": "Windsor",
+    "category": "car"
+  },
+  "kamacho": {
+    "brand": "Canis",
+    "model": "Kamacho",
+    "category": "truck"
+  },
+  "flashgt": {
+    "brand": "Vapid",
+    "model": "Flash GT",
+    "category": "car"
+  },
+  "dominator2": {
+    "brand": "Vapid",
+    "model": "Pisswasser Dominator",
+    "category": "car"
+  },
+  "fusilade": {
+    "brand": "Schyster",
+    "model": "Fusilade",
+    "category": "car"
+  },
+  "vectre": {
+    "brand": "Emperor",
+    "model": "Vectre",
+    "category": "car"
+  },
+  "gauntlets": {
+    "brand": "Bravado",
+    "model": "Gauntlet S",
+    "category": "car"
+  },
+  "draugur": {
+    "brand": "Declasse",
+    "model": "Draugur",
+    "category": "car"
+  },
+  "infernus2": {
+    "brand": "Pegassi",
+    "model": "Infernus Classic",
+    "category": "car"
+  },
+  "jb7002": {
+    "brand": "Dewbauchee",
+    "model": "JB 700W",
+    "category": "car"
+  },
+  "jb700": {
+    "brand": "Dewbauchee",
+    "model": "JB 700",
+    "category": "car"
+  },
+  "bullet": {
+    "brand": "Vapid",
+    "model": "Bullet",
+    "category": "car"
+  },
+  "predator": {
+    "brand": "Shitzu",
+    "model": "Predator",
+    "category": "boat"
+  },
+  "sultan": {
+    "brand": "Karin",
+    "model": "Sultan",
+    "category": "car"
+  },
+  "gauntlet5": {
+    "brand": "Bravado",
+    "model": "Gauntlet Classic Custom",
+    "category": "car"
+  },
+  "rt3000": {
+    "brand": "Dinka",
+    "model": "RT3000",
+    "category": "car"
+  },
+  "dominator10": {
+    "brand": "Vapid",
+    "model": "Dominator FX",
+    "category": "car"
+  },
+  "windsor2": {
+    "brand": "Enus",
+    "model": "Windsor Drop",
+    "category": "car"
+  },
+  "dominator7": {
+    "brand": "Vapid",
+    "model": "Dominator ASP",
+    "category": "car"
+  },
+  "tailgater2": {
+    "brand": "Obey",
+    "model": "Tailgater S",
+    "category": "car"
+  },
+  "buffalo3": {
+    "brand": "Bravado",
+    "model": "Sprunk Buffalo",
+    "category": "car"
+  },
+  "retinue2": {
+    "brand": "Vapid",
+    "model": "Retinue Mk II",
+    "category": "car"
+  },
+  "youga3": {
+    "brand": "Bravado",
+    "model": "Youga Classic 4x4",
+    "category": "truck"
+  },
+  "futo": {
+    "brand": "Karin",
+    "model": "Futo",
+    "category": "car"
+  },
+  "dominator": {
+    "brand": "Vapid",
+    "model": "Dominator",
+    "category": "car"
+  },
+  "elegy": {
+    "brand": "Annis",
+    "model": "Elegy Retro Custom",
+    "category": "car"
+  },
+  "shinobi": {
+    "brand": "Nagasaki",
+    "model": "Shinobi",
+    "category": "moto"
+  },
+  "cypher": {
+    "brand": "Ubermacht",
+    "model": "Cypher",
+    "category": "car"
+  },
+  "coquette2": {
+    "brand": "Invetero",
+    "model": "Coquette Classic",
+    "category": "car"
+  },
+  "clubgtr": {
+    "brand": "BF",
+    "model": "Club GTR",
+    "category": "car"
+  },
+  "oracle2": {
+    "brand": "Ubermacht",
+    "model": "Oracle",
+    "category": "car"
+  },
+  "sabregt2": {
+    "brand": "Declasse",
+    "model": "Sabre Turbo Custom",
+    "category": "car"
+  },
+  "torero": {
+    "brand": "Pegassi",
+    "model": "Torero",
+    "category": "car"
+  },
+  "rcbandito": {
+    "brand": "RC",
+    "model": "Bandito",
+    "category": "car"
+  },
+  "remus": {
+    "brand": "Annis",
+    "model": "Remus",
+    "category": "car"
+  },
+  "speedo5": {
+    "brand": "Vapid",
+    "model": "Ratel",
+    "category": "truck"
+  },
+  "mule5": {
+    "brand": "Maibatsu",
+    "model": "Mule",
+    "category": "car"
+  },
+  "golf2": {
+    "brand": "BF",
+    "model": "Wolf Mk 2",
+    "category": "car"
+  },
+  "fury": {
+    "brand": "Imponte",
+    "model": "Calm",
+    "category": "car"
+  },
+  "beetle": {
+    "brand": "BF",
+    "model": "Beatle",
+    "category": "car"
+  },
+  "belair": {
+    "brand": "Declasse",
+    "model": "Bal Air",
+    "category": "car"
+  },
+  "nightshark": {
+    "brand": "HVY",
+    "model": "Nightshark",
+    "category": "car"
+  },
+  "ruston": {
+    "brand": "Hijak",
+    "model": "Ruston",
+    "category": "car"
+  },
+  "penumbra2": {
+    "brand": "Maibatsu",
+    "model": "Penumbra FF",
+    "category": "car"
+  },
+  "hellion2": {
+    "brand": "Annis",
+    "model": "Hellion XL",
+    "category": "truck"
+  },
+  "imperator": {
+    "brand": "Vapid",
+    "model": "Imperator Apocalypse",
+    "category": "car"
+  },
+  "imperator2": {
+    "brand": "Vapid",
+    "model": "Imperator Fiction",
+    "category": "car"
+  },
+  "imperator3": {
+    "brand": "Vapid",
+    "model": "Imperator Nightmare",
+    "category": "car"
+  },
+  "schwarzer": {
+    "brand": "Benefactor",
+    "model": "Schwartzer",
+    "category": "car"
+  },
+  "dominator4": {
+    "brand": "Vapid",
+    "model": "Dominator Apocalypse",
+    "category": "car"
+  },
+  "dominator6": {
+    "brand": "Vapid",
+    "model": "Dominator Nightmare",
+    "category": "car"
+  },
+  "euros": {
+    "brand": "Annis",
+    "model": "Euros",
+    "category": "car"
+  },
+  "ruiner2": {
+    "brand": "Imponte",
+    "model": "Ruiner 2000",
+    "category": "car"
+  },
+  "kuruma": {
+    "brand": "Karin",
+    "model": "Kuruma",
+    "category": "car"
+  },
+  "voltic": {
+    "brand": "Coil",
+    "model": "Voltic",
+    "category": "car"
+  },
+  "oracle": {
+    "brand": "Ubermacht",
+    "model": "Oracle XS",
+    "category": "car"
+  },
+  "previon": {
+    "brand": "Karin",
+    "model": "Previon",
+    "category": "car"
+  },
+  "ardent": {
+    "brand": "Ocelot",
+    "model": "Ardent",
+    "category": "car"
+  },
+  "f620": {
+    "brand": "Ocelot",
+    "model": "F620",
+    "category": "car"
+  },
+  "felon": {
+    "brand": "Lampadati",
+    "model": "Felon",
+    "category": "car"
+  },
+  "ruiner": {
+    "brand": "Imponte",
+    "model": "Ruiner",
+    "category": "car"
+  },
+  "greenwood": {
+    "brand": "Bravado",
+    "model": "Greenwood",
+    "category": "car"
+  },
+  "buffalo2": {
+    "brand": "Bravado",
+    "model": "Buffalo S",
+    "category": "car"
+  },
+  "gb200": {
+    "brand": "Vapid",
+    "model": "GB200",
+    "category": "car"
+  },
+  "issi7": {
+    "brand": "Weeny",
+    "model": "Issi Sport",
+    "category": "car"
+  },
+  "brawler": {
+    "brand": "Coil",
+    "model": "Brawler",
+    "category": "car"
+  },
+  "turismo2": {
+    "brand": "Grotti",
+    "model": "Turismo Classic",
+    "category": "car"
+  },
+  "akuma": {
+    "brand": "Dinka",
+    "model": "Akuma",
+    "category": "moto"
+  },
+  "hustler": {
+    "brand": "Vapid",
+    "model": "Hustler",
+    "category": "car"
+  },
+  "cog55": {
+    "brand": "Enus",
+    "model": "Cognoscenti 55",
+    "category": "car"
+  },
+  "cog552": {
+    "brand": "Enus",
+    "model": "Cognoscenti 55 (Armored)",
+    "category": "car"
+  },
+  "exemplar": {
+    "brand": "Dewbauchee",
+    "model": "Exemplar",
+    "category": "car"
+  },
+  "jackal": {
+    "brand": "Ocelot",
+    "model": "Jackal",
+    "category": "car"
+  },
+  "tropos": {
+    "brand": "Lampadati",
+    "model": "Tropos Rallye",
+    "category": "car"
+  },
+  "mamba": {
+    "brand": "Declasse",
+    "model": "Mamba",
+    "category": "car"
+  },
+  "jubilee": {
+    "brand": "Enus",
+    "model": "Jubilee",
+    "category": "car"
+  },
+  "impaler3": {
+    "brand": "Declasse",
+    "model": "Impaler Fiction",
+    "category": "car"
+  },
+  "impaler4": {
+    "brand": "Declasse",
+    "model": "Impaler Nightmare",
+    "category": "car"
+  },
+  "peyote2": {
+    "brand": "Vapid",
+    "model": "Peyote Gasser",
+    "category": "car"
+  },
+  "menacer": {
+    "brand": "HVY",
+    "model": "Menacer",
+    "category": "car"
+  },
+  "superd": {
+    "brand": "Enus",
+    "model": "Super Diamond",
+    "category": "car"
+  },
+  "sadler": {
+    "brand": "Vapid",
+    "model": "Sadler",
+    "category": "truck"
+  },
+  "surfer3": {
+    "brand": "BF",
+    "model": "Surfer Custom",
+    "category": "car"
+  },
+  "toreador": {
+    "brand": "Pegassi",
+    "model": "Toreador",
+    "category": "car"
+  },
+  "baller7": {
+    "brand": "Gallivanter",
+    "model": "Baller ST",
+    "category": "car"
+  },
+  "sentinel3": {
+    "brand": "Ubermacht",
+    "model": "Sentinel Classic",
+    "category": "car"
+  },
+  "aleutian": {
+    "brand": "Vapid",
+    "model": "Aleutian",
+    "category": "car"
+  },
+  "ratel": {
+    "brand": "Vapid",
+    "model": "Ratel",
+    "category": "car"
+  },
+  "cognoscenti": {
+    "brand": "Enus",
+    "model": "Cognoscenti",
+    "category": "car"
+  },
+  "buffalo": {
+    "brand": "Bravado",
+    "model": "Buffalo",
+    "category": "car"
+  },
+  "schafter4": {
+    "brand": "Benefactor",
+    "model": "Schafter LWB",
+    "category": "car"
+  },
+  "streiter": {
+    "brand": "Benefactor",
+    "model": "Streiter",
+    "category": "car"
+  },
+  "tampa2": {
+    "brand": "Declasse",
+    "model": "Drift Tampa",
+    "category": "car"
+  },
+  "deity": {
+    "brand": "Enus",
+    "model": "Deity",
+    "category": "car"
+  },
+  "seraph3": {
+    "brand": "Ubermacht",
+    "model": "Seraph XS",
+    "category": "car"
+  },
+  "cavalcade3": {
+    "brand": "Albany",
+    "model": "Cavalcade XL",
+    "category": "car"
+  },
+  "bati2": {
+    "brand": "Pegassi",
+    "model": "Bati 801RR",
+    "category": "moto"
+  },
+  "thrust": {
+    "brand": "Dinka",
+    "model": "Thrust",
+    "category": "moto"
+  },
+  "futo2": {
+    "brand": "Karin",
+    "model": "Futo GTX",
+    "category": "car"
+  },
+  "sanctus": {
+    "brand": "LCC",
+    "model": "Sanctus",
+    "category": "moto"
+  },
+  "dominator5": {
+    "brand": "Vapid",
+    "model": "Dominator Fiction",
+    "category": "car"
+  },
+  "cognoscenti2": {
+    "brand": "Enus",
+    "model": "Cognoscenti (Armored)",
+    "category": "car"
+  },
+  "omnis": {
+    "brand": "Obey",
+    "model": "Omnis",
+    "category": "car"
+  },
+  "zion2": {
+    "brand": "Ubermacht",
+    "model": "Zion Cabrio",
+    "category": "car"
+  },
+  "hakuchou": {
+    "brand": "Shitzu",
+    "model": "Hakuchou",
+    "category": "moto"
+  },
+  "savestra": {
+    "brand": "Annis",
+    "model": "Savestra",
+    "category": "car"
+  },
+  "cogcabrio": {
+    "brand": "Enus",
+    "model": "Cognoscenti Cabrio",
+    "category": "car"
+  },
+  "bati": {
+    "brand": "Pegassi",
+    "model": "Bati 801",
+    "category": "moto"
+  },
+  "tulip2": {
+    "brand": "Declasse",
+    "model": "Tulip M-100",
+    "category": "car"
+  },
+  "dubsta3": {
+    "brand": "Benefactor",
+    "model": "Dubsta 6x6",
+    "category": "car"
+  },
+  "iwagen": {
+    "brand": "Obey",
+    "model": "I-Wagen",
+    "category": "car"
+  },
+  "impaler6": {
+    "brand": "Declasse",
+    "model": "Impaler LX",
+    "category": "car"
+  },
+  "zion": {
+    "brand": "Ubermacht",
+    "model": "Zion",
+    "category": "car"
+  },
+  "vortex": {
+    "brand": "Pegassi",
+    "model": "Vortex",
+    "category": "moto"
+  },
+  "impaler2": {
+    "brand": "Declasse",
+    "model": "Impaler Apocalypse",
+    "category": "car"
+  },
+  "coureur": {
+    "brand": "Penaud",
+    "model": "La Coureuse",
+    "category": "car"
+  },
+  "mesa3": {
+    "brand": "Canis",
+    "model": "Mesa",
+    "category": "car"
+  },
+  "vindicator": {
+    "brand": "Dinka",
+    "model": "Vindicator",
+    "category": "moto"
+  },
+  "everon": {
+    "brand": "Karin",
+    "model": "Everon",
+    "category": "truck"
+  },
+  "huntley": {
+    "brand": "Enus",
+    "model": "Huntley S",
+    "category": "car"
+  },
+  "reever": {
+    "brand": "Western",
+    "model": "Reever",
+    "category": "moto"
+  },
+  "dukes2": {
+    "brand": "Imponte",
+    "model": "Duke O Death",
+    "category": "car"
+  },
+  "issi8": {
+    "brand": "Weeny",
+    "model": "Issi Rally",
+    "category": "car"
+  },
+  "zion3": {
+    "brand": "Ubermacht",
+    "model": "Zion Classic",
+    "category": "car"
+  },
+  "ruiner4": {
+    "brand": "Imponte",
+    "model": "Ruiner ZZ-8",
+    "category": "car"
+  },
+  "vigero2": {
+    "brand": "Declasse",
+    "model": "Vigero ZX",
+    "category": "car"
+  },
+  "zr350": {
+    "brand": "Annis",
+    "model": "ZR350",
+    "category": "car"
+  },
+  "gauntlet2": {
+    "brand": "Bravado",
+    "model": "Redwood Gauntlet",
+    "category": "car"
+  },
+  "deathbike": {
+    "brand": "Western",
+    "model": "Deathbike Apocalypse",
+    "category": "moto"
+  },
+  "deathbike2": {
+    "brand": "Western",
+    "model": "Deathbike Fiction",
+    "category": "moto"
+  },
+  "stromberg": {
+    "brand": "Ocelot",
+    "model": "Stromberg",
+    "category": "car"
+  },
+  "felon2": {
+    "brand": "Lampadati",
+    "model": "Felon GT",
+    "category": "car"
+  },
+  "buffalo5": {
+    "brand": "Bravado",
+    "model": "Buffalo EVX",
+    "category": "car"
+  },
+  "vigero3": {
+    "brand": "Declasse",
+    "model": "Vigero ZX Convertible",
+    "category": "car"
+  },
+  "impaler5": {
+    "brand": "Declasse",
+    "model": "Impaler SZ",
+    "category": "car"
+  },
+  "baller3": {
+    "brand": "Gallivanter",
+    "model": "Baller LE",
+    "category": "car"
+  },
+  "retinue": {
+    "brand": "Vapid",
+    "model": "Retinue",
+    "category": "car"
+  },
+  "youga2": {
+    "brand": "Bravado",
+    "model": "Youga Classic",
+    "category": "truck"
+  },
+  "boor": {
+    "brand": "Karin",
+    "model": "Boor",
+    "category": "car"
+  },
+  "stingergt": {
+    "brand": "Grotti",
+    "model": "Stinger GT",
+    "category": "car"
+  },
+  "baller4": {
+    "brand": "Gallivanter",
+    "model": "Baller LE LWB",
+    "category": "car"
+  },
+  "contender": {
+    "brand": "Vapid",
+    "model": "Contender",
+    "category": "truck"
+  },
+  "xls2": {
+    "brand": "Benefactor",
+    "model": "XLS (Armored)",
+    "category": "car"
+  },
+  "clique": {
+    "brand": "Vapid",
+    "model": "Clique",
+    "category": "car"
+  },
+  "baller2": {
+    "brand": "Gallivanter",
+    "model": "Baller",
+    "category": "car"
+  },
+  "schafter2": {
+    "brand": "Benefactor",
+    "model": "Schafter",
+    "category": "car"
+  },
+  "sentinel2": {
+    "brand": "Ubermacht",
+    "model": "Sentinel",
+    "category": "car"
+  },
+  "granger": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "banshee": {
+    "brand": "Bravado",
+    "model": "Banshee",
+    "category": "car"
+  },
+  "gt500": {
+    "brand": "Grotti",
+    "model": "GT500",
+    "category": "car"
+  },
+  "baller5": {
+    "brand": "Gallivanter",
+    "model": "Baller LE (Armored)",
+    "category": "car"
+  },
+  "stinger": {
+    "brand": "Grotti",
+    "model": "Stinger",
+    "category": "car"
+  },
+  "brutus": {
+    "brand": "Declasse",
+    "model": "Brutus Apocalypse",
+    "category": "car"
+  },
+  "brutus2": {
+    "brand": "Declasse",
+    "model": "Brutus Fiction",
+    "category": "car"
+  },
+  "brutus3": {
+    "brand": "Declasse",
+    "model": "Brutus Nightmare",
+    "category": "car"
+  },
+  "btype2": {
+    "brand": "Albany",
+    "model": "Fränken Stange",
+    "category": "car"
+  },
+  "gauntlet": {
+    "brand": "Bravado",
+    "model": "Gauntlet",
+    "category": "car"
+  },
+  "yosemite": {
+    "brand": "Declasse",
+    "model": "Yosemite",
+    "category": "car"
+  },
+  "yosemiteswb": {
+    "brand": "Declasse",
+    "model": "Yosemite SWB",
+    "category": "truck"
+  },
+  "issi4": {
+    "brand": "Weeny",
+    "model": "Issi Apocalypse",
+    "category": "car"
+  },
+  "issi5": {
+    "brand": "Weeny",
+    "model": "Issi Fiction",
+    "category": "car"
+  },
+  "impaler": {
+    "brand": "Declasse",
+    "model": "Impaler",
+    "category": "car"
+  },
+  "tampa3": {
+    "brand": "Declasse",
+    "model": "Weaponized Tampa",
+    "category": "car"
+  },
+  "glendale2": {
+    "brand": "Benefactor",
+    "model": "Glendale Custom",
+    "category": "car"
+  },
+  "cheburek": {
+    "brand": "RUNE",
+    "model": "Cheburek",
+    "category": "car"
+  },
+  "baller6": {
+    "brand": "Gallivanter",
+    "model": "Baller LE LWB (Armored)",
+    "category": "car"
+  },
+  "tulip": {
+    "brand": "Declasse",
+    "model": "Tulip",
+    "category": "car"
+  },
+  "dominator8": {
+    "brand": "Vapid",
+    "model": "Dominator GTT",
+    "category": "car"
+  },
+  "khamelion": {
+    "brand": "Hijak",
+    "model": "Khamelion",
+    "category": "car"
+  },
+  "xls": {
+    "brand": "Benefactor",
+    "model": "XLS",
+    "category": "car"
+  },
+  "schafter6": {
+    "brand": "Benefactor",
+    "model": "Schafter LWB (Armored)",
+    "category": "car"
+  },
+  "gargoyle": {
+    "brand": "Western",
+    "model": "Gargoyle",
+    "category": "moto"
+  },
+  "lurcher": {
+    "brand": "Albany",
+    "model": "Lurcher",
+    "category": "car"
+  },
+  "dorado": {
+    "brand": "Bravado",
+    "model": "Dorado",
+    "category": "car"
+  },
+  "hermes": {
+    "brand": "Albany",
+    "model": "Hermes",
+    "category": "car"
+  },
+  "eurosx32": {
+    "brand": "Annis",
+    "model": "Euros X32",
+    "category": "car"
+  },
+  "cliffhanger": {
+    "brand": "Western",
+    "model": "Cliffhanger",
+    "category": "moto"
+  },
+  "club": {
+    "brand": "BF",
+    "model": "Club",
+    "category": "car"
+  },
+  "peyote3": {
+    "brand": "Vapid",
+    "model": "Peyote Custom",
+    "category": "car"
+  },
+  "defiler": {
+    "brand": "Shitzu",
+    "model": "Defiler",
+    "category": "moto"
+  },
+  "washington": {
+    "brand": "Albany",
+    "model": "Washington",
+    "category": "car"
+  },
+  "michelli": {
+    "brand": "Lampadati",
+    "model": "Michelli GT",
+    "category": "car"
+  },
+  "esskey": {
+    "brand": "Pegassi",
+    "model": "Esskey",
+    "category": "moto"
+  },
+  "rocoto": {
+    "brand": "Obey",
+    "model": "Rocoto",
+    "category": "car"
+  },
+  "double": {
+    "brand": "Dinka",
+    "model": "Double-T",
+    "category": "moto"
+  },
+  "caracara2": {
+    "brand": "Vapid",
+    "model": "Caracara 4x4",
+    "category": "truck"
+  },
+  "tahoma": {
+    "brand": "Declasse",
+    "model": "Tahoma Coupe",
+    "category": "car"
+  },
+  "kanjosj": {
+    "brand": "Dinka",
+    "model": "Kanjo SJ",
+    "category": "car"
+  },
+  "coquette3": {
+    "brand": "Invetero",
+    "model": "Coquette BlackFin",
+    "category": "car"
+  },
+  "penumbra": {
+    "brand": "Maibatsu",
+    "model": "Penumbra",
+    "category": "car"
+  },
+  "bobcatxl": {
+    "brand": "Vapid",
+    "model": "Bobcat XL",
+    "category": "truck"
+  },
+  "vamos": {
+    "brand": "Declasse",
+    "model": "Vamos",
+    "category": "car"
+  },
+  "l35": {
+    "brand": "Declasse",
+    "model": "Walton L35",
+    "category": "car"
+  },
+  "trophytruck": {
+    "brand": "Vapid",
+    "model": "Trophy Truck",
+    "category": "car"
+  },
+  "trophytruck2": {
+    "brand": "Vapid",
+    "model": "Desert Raid",
+    "category": "car"
+  },
+  "fugitive": {
+    "brand": "Cheval",
+    "model": "Fugitive",
+    "category": "car"
+  },
+  "glendale": {
+    "brand": "Benefactor",
+    "model": "Glendale",
+    "category": "car"
+  },
+  "yosemite1500": {
+    "brand": "Declasse",
+    "model": "Yosemite 1500",
+    "category": "car"
+  },
+  "kanjo": {
+    "brand": "Dinka",
+    "model": "Blista Kanjo",
+    "category": "car"
+  },
+  "manana2": {
+    "brand": "Albany",
+    "model": "Manana Custom",
+    "category": "car"
+  },
+  "z190": {
+    "brand": "Karin",
+    "model": "190z",
+    "category": "car"
+  },
+  "dukes": {
+    "brand": "Imponte",
+    "model": "Dukes",
+    "category": "car"
+  },
+  "intruder": {
+    "brand": "Karin",
+    "model": "Intruder",
+    "category": "car"
+  },
+  "sentinel": {
+    "brand": "Ubermacht",
+    "model": "Sentinel XS",
+    "category": "car"
+  },
+  "granger2": {
+    "brand": "Declasse",
+    "model": "Granger 3600LX",
+    "category": "car"
+  },
+  "s230": {
+    "brand": "Annis",
+    "model": "S-230",
+    "category": "car"
+  },
+  "schwartzerc": {
+    "brand": "Benefactor",
+    "model": "Schwartzer Classic",
+    "category": "car"
+  },
+  "buccaneer": {
+    "brand": "Albany",
+    "model": "Buccaneer",
+    "category": "car"
+  },
+  "faction2": {
+    "brand": "Willard",
+    "model": "Faction Custom",
+    "category": "car"
+  },
+  "phoenix": {
+    "brand": "Imponte",
+    "model": "Phoenix",
+    "category": "car"
+  },
+  "vigero": {
+    "brand": "Declasse",
+    "model": "Vigero",
+    "category": "car"
+  },
+  "zhaba": {
+    "brand": "RUNE",
+    "model": "Zhaba",
+    "category": "car"
+  },
+  "monstrociti": {
+    "brand": "Maibatsu",
+    "model": "MonstroCiti",
+    "category": "car"
+  },
+  "tailgater": {
+    "brand": "Obey",
+    "model": "Tailgater",
+    "category": "car"
+  },
+  "buccaneer2": {
+    "brand": "Albany",
+    "model": "Buccaneer Custom",
+    "category": "car"
+  },
+  "stalion2": {
+    "brand": "Declasse",
+    "model": "Burger Shot Stallion",
+    "category": "car"
+  },
+  "bruiser3": {
+    "brand": "Benefactor",
+    "model": "Bruiser Nightmare",
+    "category": "car"
+  },
+  "stanier": {
+    "brand": "Vapid",
+    "model": "Stanier",
+    "category": "car"
+  },
+  "dubsta2": {
+    "brand": "Benefactor",
+    "model": "Dubsta",
+    "category": "car"
+  },
+  "asterope": {
+    "brand": "Karin",
+    "model": "Asterope",
+    "category": "car"
+  },
+  "ruffian": {
+    "brand": "Pegassi",
+    "model": "Ruffian",
+    "category": "moto"
+  },
+  "monster3": {
+    "brand": "Bravado",
+    "model": "Sasquatch Apocalypse",
+    "category": "car"
+  },
+  "monster4": {
+    "brand": "Bravado",
+    "model": "Sasquatch Fiction",
+    "category": "car"
+  },
+  "monster5": {
+    "brand": "Bravado",
+    "model": "Sasquatch Nightmare",
+    "category": "car"
+  },
+  "docktug": {
+    "brand": "HVY",
+    "model": "Docktug",
+    "category": "car"
+  },
+  "dominator3": {
+    "brand": "Vapid",
+    "model": "Dominator GTX",
+    "category": "car"
+  },
+  "dubsta": {
+    "brand": "Benefactor",
+    "model": "Dubsta",
+    "category": "car"
+  },
+  "warrener2": {
+    "brand": "Vulcar",
+    "model": "Warrener HKR",
+    "category": "truck"
+  },
+  "sabregt": {
+    "brand": "Declasse",
+    "model": "Sabre Turbo",
+    "category": "car"
+  },
+  "fq2": {
+    "brand": "Fathom",
+    "model": "FQ 2",
+    "category": "car"
+  },
+  "police2": {
+    "brand": "Bravado",
+    "model": "Buffalo",
+    "category": "car"
+  },
+  "faction": {
+    "brand": "Willard",
+    "model": "Faction",
+    "category": "car"
+  },
+  "stalion": {
+    "brand": "Declasse",
+    "model": "Stallion",
+    "category": "car"
+  },
+  "stretch": {
+    "brand": "Dundreary ",
+    "model": "Stretch",
+    "category": "car"
+  },
+  "raptor": {
+    "brand": "BF",
+    "model": "Raptor",
+    "category": "car"
+  },
+  "pentro": {
+    "brand": "Maibatsu",
+    "model": "Penumbra Retro",
+    "category": "car"
+  },
+  "pentro2": {
+    "brand": "Maibatsu",
+    "model": "Penumbra Retro (RHD)",
+    "category": "car"
+  },
+  "avarus": {
+    "brand": "LCC",
+    "model": "Avarus",
+    "category": "moto"
+  },
+  "bruiser2": {
+    "brand": "Benefactor",
+    "model": "Bruiser Fiction",
+    "category": "car"
+  },
+  "premier": {
+    "brand": "Declasse",
+    "model": "Premier",
+    "category": "car"
+  },
+  "slamvan2": {
+    "brand": "Vapid",
+    "model": "Lost Slamvan",
+    "category": "car"
+  },
+  "hellion": {
+    "brand": "Annis",
+    "model": "Hellion",
+    "category": "truck"
+  },
+  "yosemite3": {
+    "brand": "Declasse",
+    "model": "Yosemite Rancher",
+    "category": "truck"
+  },
+  "baller": {
+    "brand": "Gallivanter",
+    "model": "Baller",
+    "category": "car"
+  },
+  "habanero": {
+    "brand": "Emperor",
+    "model": "Habanero",
+    "category": "car"
+  },
+  "landstalker2": {
+    "brand": "Dundreary ",
+    "model": "Landstalker XL",
+    "category": "car"
+  },
+  "asea": {
+    "brand": "Declasse",
+    "model": "Asea",
+    "category": "car"
+  },
+  "primo": {
+    "brand": "Albany",
+    "model": "Primo",
+    "category": "car"
+  },
+  "stratum": {
+    "brand": "Zirconium",
+    "model": "Stratum",
+    "category": "car"
+  },
+  "btype": {
+    "brand": "Albany",
+    "model": "Roosevelt",
+    "category": "car"
+  },
+  "pentro3": {
+    "brand": "Maibatsu",
+    "model": "Penumbra Retro Spyder",
+    "category": "car"
+  },
+  "sanchez2": {
+    "brand": "Maibatsu",
+    "model": "Sanchez",
+    "category": "moto"
+  },
+  "radi": {
+    "brand": "Vapid",
+    "model": "Radius",
+    "category": "car"
+  },
+  "limo2": {
+    "brand": "Benefactor",
+    "model": "Turreted Limo",
+    "category": "car"
+  },
+  "btype3": {
+    "brand": "Albany",
+    "model": "Roosevelt Valor",
+    "category": "car"
+  },
+  "carbonrs": {
+    "brand": "Nagasaki",
+    "model": "Carbon RS",
+    "category": "moto"
+  },
+  "blade": {
+    "brand": "Vapid",
+    "model": "Blade",
+    "category": "car"
+  },
+  "caracara": {
+    "brand": "Vapid",
+    "model": "Caracara",
+    "category": "car"
+  },
+  "primo2": {
+    "brand": "Albany",
+    "model": "Primo Custom",
+    "category": "car"
+  },
+  "vivanite": {
+    "brand": "Karin",
+    "model": "Vivanite",
+    "category": "car"
+  },
+  "postlude": {
+    "brand": "Dinka",
+    "model": "Postlude",
+    "category": "car"
+  },
+  "bf400": {
+    "brand": "Nagasaki",
+    "model": "BF400",
+    "category": "moto"
+  },
+  "manchez": {
+    "brand": "Maibatsu",
+    "model": "Manchez",
+    "category": "moto"
+  },
+  "slamvan3": {
+    "brand": "Vapid",
+    "model": "Slamvan Custom",
+    "category": "car"
+  },
+  "gresley": {
+    "brand": "Bravado",
+    "model": "Gresley",
+    "category": "car"
+  },
+  "warrener": {
+    "brand": "Vulcar",
+    "model": "Warrener",
+    "category": "car"
+  },
+  "blista2": {
+    "brand": "Dinka",
+    "model": "Blista Compact",
+    "category": "car"
+  },
+  "firetruk": {
+    "brand": "MLT",
+    "model": "Tarrton FT",
+    "category": "car"
+  },
+  "blista": {
+    "brand": "Dinka",
+    "model": "Blista",
+    "category": "car"
+  },
+  "diablous": {
+    "brand": "Principe",
+    "model": "Diabolus",
+    "category": "moto"
+  },
+  "brioso": {
+    "brand": "Grotti",
+    "model": "Brioso R/A",
+    "category": "car"
+  },
+  "freecrawler": {
+    "brand": "Canis",
+    "model": "Freecrawler",
+    "category": "car"
+  },
+  "riata": {
+    "brand": "Vapid",
+    "model": "Riata",
+    "category": "truck"
+  },
+  "serrano": {
+    "brand": "Benefactor",
+    "model": "Serrano",
+    "category": "car"
+  },
+  "blista3": {
+    "brand": "Dinka",
+    "model": "Go Go Monkey Blista",
+    "category": "car"
+  },
+  "feltzer3": {
+    "brand": "Benefactor",
+    "model": "Stirling GT",
+    "category": "car"
+  },
+  "hotknife": {
+    "brand": "Vapid",
+    "model": "Hotknife",
+    "category": "car"
+  },
+  "slamvan": {
+    "brand": "Vapid",
+    "model": "Slamvan",
+    "category": "car"
+  },
+  "patriot": {
+    "brand": "Mammoth",
+    "model": "Patriot",
+    "category": "car"
+  },
+  "patriot2": {
+    "brand": "Mammoth",
+    "model": "Patriot Stretch",
+    "category": "car"
+  },
+  "issi2": {
+    "brand": "Weeny",
+    "model": "Issi",
+    "category": "car"
+  },
+  "nightblade": {
+    "brand": "Western",
+    "model": "Nightblade",
+    "category": "moto"
+  },
+  "yosemite2": {
+    "brand": "Declasse",
+    "model": "Drift Yosemite",
+    "category": "car"
+  },
+  "bifta": {
+    "brand": "BF",
+    "model": "Bifta",
+    "category": "car"
+  },
+  "outlaw": {
+    "brand": "Nagasaki",
+    "model": "Outlaw",
+    "category": "car"
+  },
+  "seminole2": {
+    "brand": "Canis",
+    "model": "Seminole Frontier",
+    "category": "car"
+  },
+  "deviant": {
+    "brand": "Schyster",
+    "model": "Deviant",
+    "category": "car"
+  },
+  "gauntlet3": {
+    "brand": "Bravado",
+    "model": "Gauntlet Classic",
+    "category": "car"
+  },
+  "slamvan4": {
+    "brand": "Vapid",
+    "model": "Slamvan Apocalypse",
+    "category": "car"
+  },
+  "slamvan5": {
+    "brand": "Vapid",
+    "model": "Slamvan Fiction",
+    "category": "car"
+  },
+  "policet": {
+    "brand": "Declasse",
+    "model": "Burrito",
+    "category": "car"
+  },
+  "fcr2": {
+    "brand": "Pegassi",
+    "model": "FCR 1000 Custom",
+    "category": "moto"
+  },
+  "ellie": {
+    "brand": "Vapid",
+    "model": "Ellie",
+    "category": "car"
+  },
+  "sandking": {
+    "brand": "Vapid",
+    "model": "Sandking XL",
+    "category": "truck"
+  },
+  "landstalker": {
+    "brand": "Dundreary ",
+    "model": "Landstalker",
+    "category": "car"
+  },
+  "nebula": {
+    "brand": "Vulcar",
+    "model": "Nebula Turbo",
+    "category": "car"
+  },
+  "brigham": {
+    "brand": "Albany",
+    "model": "Brigham",
+    "category": "car"
+  },
+  "cavalcade": {
+    "brand": "Albany",
+    "model": "Cavalcade",
+    "category": "car"
+  },
+  "cavalcade2": {
+    "brand": "Albany",
+    "model": "Cavalcade",
+    "category": "car"
+  },
+  "fcr": {
+    "brand": "Pegassi",
+    "model": "FCR 1000",
+    "category": "moto"
+  },
+  "panto": {
+    "brand": "Benefactor",
+    "model": "Panto",
+    "category": "car"
+  },
+  "eudora": {
+    "brand": "Willard",
+    "model": "Eudora",
+    "category": "car"
+  },
+  "tampa": {
+    "brand": "Declasse",
+    "model": "Tampa",
+    "category": "car"
+  },
+  "stafford": {
+    "brand": "Enus",
+    "model": "Stafford",
+    "category": "car"
+  },
+  "fbi": {
+    "brand": "Bravado",
+    "model": "Buffalo",
+    "category": "car"
+  },
+  "nemesis": {
+    "brand": "Principe",
+    "model": "Nemesis",
+    "category": "moto"
+  },
+  "moonbeam": {
+    "brand": "Declasse",
+    "model": "Moonbeam",
+    "category": "car"
+  },
+  "bjxl": {
+    "brand": "Karin",
+    "model": "BeeJay XL",
+    "category": "car"
+  },
+  "weevil": {
+    "brand": "BF",
+    "model": "Weevil",
+    "category": "car"
+  },
+  "seminole": {
+    "brand": "Canis",
+    "model": "Seminole",
+    "category": "car"
+  },
+  "prairie": {
+    "brand": "Bollokan",
+    "model": "Prairie",
+    "category": "car"
+  },
+  "rhapsody": {
+    "brand": "Declasse",
+    "model": "Rhapsody",
+    "category": "car"
+  },
+  "brioso3": {
+    "brand": "Grotti",
+    "model": "Brioso 300 Widebody",
+    "category": "car"
+  },
+  "sandking2": {
+    "brand": "Vapid",
+    "model": "Sandking SWB",
+    "category": "truck"
+  },
+  "manana": {
+    "brand": "Albany",
+    "model": "Manana",
+    "category": "car"
+  },
+  "emperor": {
+    "brand": "Albany",
+    "model": "Emperor",
+    "category": "car"
+  },
+  "dukes3": {
+    "brand": "Imponte",
+    "model": "Beater Dukes",
+    "category": "car"
+  },
+  "surge": {
+    "brand": "Cheval",
+    "model": "Surge",
+    "category": "car"
+  },
+  "pranger": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "stryder": {
+    "brand": "Nagasaki",
+    "model": "Stryder",
+    "category": "moto"
+  },
+  "moonbeam2": {
+    "brand": "Declasse",
+    "model": "Moonbeam Custom",
+    "category": "car"
+  },
+  "lectro": {
+    "brand": "Principe",
+    "model": "Lectro",
+    "category": "moto"
+  },
+  "mesa": {
+    "brand": "Canis",
+    "model": "Mesa",
+    "category": "car"
+  },
+  "fagaloa": {
+    "brand": "Vulcar",
+    "model": "Fagaloa",
+    "category": "car"
+  },
+  "innovation": {
+    "brand": "LCC",
+    "model": "Innovation",
+    "category": "moto"
+  },
+  "virgo2": {
+    "brand": "Dundreary ",
+    "model": "Virgo Classic Custom",
+    "category": "car"
+  },
+  "dynasty": {
+    "brand": "Weeny",
+    "model": "Dynasty",
+    "category": "car"
+  },
+  "nightshade": {
+    "brand": "Imponte",
+    "model": "Nightshade",
+    "category": "car"
+  },
+  "inductor": {
+    "brand": "Coil",
+    "model": "Inductor",
+    "category": "bicycle"
+  },
+  "rancherxl": {
+    "brand": "Declasse",
+    "model": "Rancher XL",
+    "category": "car"
+  },
+  "tornado": {
+    "brand": "Declasse",
+    "model": "Tornado",
+    "category": "car"
+  },
+  "tornado2": {
+    "brand": "Declasse",
+    "model": "Tornado",
+    "category": "car"
+  },
+  "asbo": {
+    "brand": "Maxwell",
+    "model": "Asbo",
+    "category": "car"
+  },
+  "ratloader2": {
+    "brand": "Bravado",
+    "model": "Rat-Truck",
+    "category": "car"
+  },
+  "ingot": {
+    "brand": "Vulcar",
+    "model": "Ingot",
+    "category": "car"
+  },
+  "dilettante": {
+    "brand": "Karin",
+    "model": "Dilettante",
+    "category": "car"
+  },
+  "tornado5": {
+    "brand": "Declasse",
+    "model": "Tornado Custom",
+    "category": "car"
+  },
+  "rrocket": {
+    "brand": "Western",
+    "model": "Rampant Rocket",
+    "category": "moto"
+  },
+  "peyote": {
+    "brand": "Vapid",
+    "model": "Peyote",
+    "category": "car"
+  },
+  "rebel2": {
+    "brand": "Karin",
+    "model": "Rebel",
+    "category": "truck"
+  },
+  "camper": {
+    "brand": "Brute",
+    "model": "Camper",
+    "category": "car"
+  },
+  "patriot3": {
+    "brand": "Mammoth",
+    "model": "Patriot Mil-Spec",
+    "category": "car"
+  },
+  "kalahari": {
+    "brand": "Canis",
+    "model": "Kalahari",
+    "category": "car"
+  },
+  "pbus": {
+    "brand": "Brute ",
+    "model": "Cannon PB",
+    "category": "car"
+  },
+  "dune3": {
+    "brand": "BF",
+    "model": "Dune FAV",
+    "category": "car"
+  },
+  "vader": {
+    "brand": "Shitzu",
+    "model": "Vader",
+    "category": "moto"
+  },
+  "picador": {
+    "brand": "Cheval",
+    "model": "Picador",
+    "category": "car"
+  },
+  "police3": {
+    "brand": "Vapid",
+    "model": "Interceptor",
+    "category": "car"
+  },
+  "broadway": {
+    "brand": "Classique",
+    "model": "Broadway",
+    "category": "car"
+  },
+  "regina": {
+    "brand": "Dundreary ",
+    "model": "Regina",
+    "category": "car"
+  },
+  "faction3": {
+    "brand": "Willard",
+    "model": "Faction Custom Donk",
+    "category": "car"
+  },
+  "speedo": {
+    "brand": "Vapid",
+    "model": "Speedo",
+    "category": "truck"
+  },
+  "ambulance": {
+    "brand": "Brute ",
+    "model": "Burrito AMB",
+    "category": "car"
+  },
+  "brioso2": {
+    "brand": "Grotti",
+    "model": "Brioso 300",
+    "category": "car"
+  },
+  "trash": {
+    "brand": "Jobuilt",
+    "model": "Trashmaster",
+    "category": "car"
+  },
+  "voodoo": {
+    "brand": "Declasse",
+    "model": "Voodoo Custom",
+    "category": "car"
+  },
+  "issi3": {
+    "brand": "Weeny",
+    "model": "Issi Classic",
+    "category": "car"
+  },
+  "virgo": {
+    "brand": "Albany",
+    "model": "Virgo",
+    "category": "car"
+  },
+  "zombieb": {
+    "brand": "Western",
+    "model": "Zombie Chopper",
+    "category": "moto"
+  },
+  "bfinjection": {
+    "brand": "BF",
+    "model": "Injection",
+    "category": "car"
+  },
+  "blazer4": {
+    "brand": "Nagasaki",
+    "model": "Street Blazer",
+    "category": "car"
+  },
+  "virgo3": {
+    "brand": "Dundreary ",
+    "model": "Virgo Classic",
+    "category": "car"
+  },
+  "journey": {
+    "brand": "Zirconium",
+    "model": "Journey",
+    "category": "car"
+  },
+  "clique2": {
+    "brand": "Vapid",
+    "model": "Clique Wagon",
+    "category": "car"
+  },
+  "blazer5": {
+    "brand": "Nagasaki",
+    "model": "Blazer Aqua",
+    "category": "car"
+  },
+  "tornado6": {
+    "brand": "Declasse",
+    "model": "Tornado Rat Rod",
+    "category": "car"
+  },
+  "daemon": {
+    "brand": "Western",
+    "model": "Daemon",
+    "category": "moto"
+  },
+  "romero": {
+    "brand": "Albany",
+    "model": "Romero Hearse",
+    "category": "car"
+  },
+  "veto2": {
+    "brand": "Dinka",
+    "model": "Veto Modern",
+    "category": "car"
+  },
+  "daemon2": {
+    "brand": "Western",
+    "model": "Daemon",
+    "category": "moto"
+  },
+  "chino": {
+    "brand": "Vapid",
+    "model": "Chino",
+    "category": "car"
+  },
+  "chino2": {
+    "brand": "Vapid",
+    "model": "Chino Custom",
+    "category": "car"
+  },
+  "zombiea": {
+    "brand": "Western",
+    "model": "Zombie Bobber",
+    "category": "moto"
+  },
+  "tornado3": {
+    "brand": "Declasse",
+    "model": "Tornado",
+    "category": "car"
+  },
+  "tornado4": {
+    "brand": "Declasse",
+    "model": "Tornado",
+    "category": "car"
+  },
+  "sovereign": {
+    "brand": "Western",
+    "model": "Sovereign",
+    "category": "moto"
+  },
+  "chimera": {
+    "brand": "Nagasaki",
+    "model": "Chimera",
+    "category": "moto"
+  },
+  "hexer": {
+    "brand": "LCC",
+    "model": "Hexer",
+    "category": "moto"
+  },
+  "manchez2": {
+    "brand": "Maibatsu",
+    "model": "Manchez Scout",
+    "category": "moto"
+  },
+  "fbi2": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "dune": {
+    "brand": "BF",
+    "model": "Dune Buggy",
+    "category": "car"
+  },
+  "manchez3": {
+    "brand": "Maibatsu",
+    "model": "Manchez Scout C",
+    "category": "moto"
+  },
+  "sheriff2": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "rebel": {
+    "brand": "Karin",
+    "model": "Rusty Rebel",
+    "category": "truck"
+  },
+  "pcj": {
+    "brand": "Shitzu",
+    "model": "PCJ 600",
+    "category": "moto"
+  },
+  "bodhi2": {
+    "brand": "Canis",
+    "model": "Bodhi",
+    "category": "car"
+  },
+  "dune2": {
+    "brand": "BF",
+    "model": "Dune UFO",
+    "category": "car"
+  },
+  "lguard": {
+    "brand": "Declasse",
+    "model": "Granger",
+    "category": "car"
+  },
+  "policeb": {
+    "brand": "WMC",
+    "model": "Wolfsbane",
+    "category": "car"
+  },
+  "emperor2": {
+    "brand": "Albany",
+    "model": "Emperor",
+    "category": "car"
+  },
+  "police": {
+    "brand": "Vapid",
+    "model": "Stanier",
+    "category": "car"
+  },
+  "veto": {
+    "brand": "Dinka",
+    "model": "Veto Classic",
+    "category": "car"
+  },
+  "blazer": {
+    "brand": "Nagasaki",
+    "model": "Blazer",
+    "category": "car"
+  },
+  "verus": {
+    "brand": "Dinka",
+    "model": "Verus",
+    "category": "car"
+  },
+  "speedo2": {
+    "brand": "Vapid",
+    "model": "Clown Van",
+    "category": "truck"
+  },
+  "blazer3": {
+    "brand": "Nagasaki",
+    "model": "Hot Rod Blazer",
+    "category": "car"
+  },
+  "enduro": {
+    "brand": "Dinka",
+    "model": "Enduro",
+    "category": "moto"
+  },
+  "technical2": {
+    "brand": "Karin",
+    "model": "Technical Aqua",
+    "category": "car"
+  },
+  "voodoo2": {
+    "brand": "Declasse",
+    "model": "Voodoo",
+    "category": "car"
+  },
+  "ratloader": {
+    "brand": "Bravado",
+    "model": "Rat-Loader",
+    "category": "car"
+  },
+  "taco": {
+    "brand": "Brute",
+    "model": "Taco Van",
+    "category": "car"
+  },
+  "utillitruck3": {
+    "brand": "Vapid",
+    "model": "Contender Utility Truck",
+    "category": "car"
+  },
+  "caddy": {
+    "brand": "Nagasaki",
+    "model": "Caddy",
+    "category": "car"
+  },
+  "wolfsbane": {
+    "brand": "Western",
+    "model": "Wolfsbane",
+    "category": "moto"
+  },
+  "bagger": {
+    "brand": "Western",
+    "model": "Bagger",
+    "category": "moto"
+  },
+  "faggio": {
+    "brand": "Pegassi",
+    "model": "Faggio Sport",
+    "category": "moto"
+  },
+  "tribike": {
+    "brand": "R-Bike",
+    "model": "Whippet",
+    "category": "bicycle"
+  },
+  "tribike2": {
+    "brand": "R-Bike",
+    "model": "Endurex",
+    "category": "bicycle"
+  },
+  "tribike3": {
+    "brand": "R-Bike",
+    "model": "Tri-Cycles",
+    "category": "bicycle"
+  },
+  "faggio2": {
+    "brand": "Pegassi",
+    "model": "Faggio",
+    "category": "moto"
+  },
+  "scorcher": {
+    "brand": "PED Cycles",
+    "model": "Scorcher",
+    "category": "bicycle"
+  },
+  "fixter": {
+    "brand": "R-Bike",
+    "model": "Fixter",
+    "category": "bicycle"
+  },
+  "bmx": {
+    "brand": "PED Cycles",
+    "model": "BMX",
+    "category": "bicycle"
+  },
+  "cruiser": {
+    "brand": "PED Cycles",
+    "model": "Cruiser",
+    "category": "bicycle"
+  }
+}

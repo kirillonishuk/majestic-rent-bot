@@ -1,0 +1,19 @@
+{
+  "name": "majestic-rent-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/shared",
+    "packages/backend",
+    "packages/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w packages/backend",
+    "dev:web": "npm run dev -w packages/web",
+    "build": "npm run build -w packages/shared && npm run build -w packages/backend && npm run build -w packages/web",
+    "build:shared": "npm run build -w packages/shared",
+    "build:backend": "npm run build -w packages/backend",
+    "build:web": "npm run build -w packages/web"
+  }
+}
