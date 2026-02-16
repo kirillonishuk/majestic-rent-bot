@@ -5,7 +5,10 @@
     "rootDir": "./src",
     "jsx": "react-jsx",
     "declaration": false,
-    "declarationMap": false
+    "declarationMap": false,
+    "paths": {
+      "@majestic/shared": ["../shared/dist"]
+    }
   },
   "include": ["src"]
 }
