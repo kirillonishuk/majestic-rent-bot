@@ -15,7 +15,7 @@ async function main() {
   // Run migrations
   const { migrate } = await import("drizzle-orm/better-sqlite3/migrator");
   try {
-    migrate(db, { migrationsFolder: resolve(import.meta.dirname, "../../drizzle") });
+    migrate(db, { migrationsFolder: resolve(import.meta.dirname, "../drizzle") });
     logger.info("Database migrations applied");
   } catch (error) {
     logger.warn({ error }, "Migration skipped (may need to generate first)");
