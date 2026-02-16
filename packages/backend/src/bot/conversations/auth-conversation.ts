@@ -21,11 +21,9 @@ export async function authConversation(
 ): Promise<void> {
   const telegramId = ctx.from!.id;
 
-  const user = await db
-    .select()
-    .from(users)
-    .where(eq(users.telegramId, telegramId))
-    .get();
+  const user = await conversation.external(() =>
+    db.select().from(users).where(eq(users.telegramId, telegramId)).get()
+  );
 
   if (!user) {
     await ctx.reply("Сначала нажми /start");
@@ -50,24 +48,27 @@ export async function authConversation(
     return;
   }
 
-  // Reuse existing auth flow if conversation replays, otherwise create new
-  let authFlow = pendingAuths.get(telegramId);
-  if (!authFlow || !authFlow.isStarted()) {
-    // Clean up old flow if exists
-    if (authFlow) await authFlow.destroy();
+  // Start auth via external() to prevent replay from sending code again
+  const startResult = await conversation.external(async () => {
+    // Clean up any previous auth flow
+    const old = pendingAuths.get(telegramId);
+    if (old) await old.destroy().catch(() => {});
 
-    authFlow = new AuthFlow();
+    const authFlow = new AuthFlow();
     pendingAuths.set(telegramId, authFlow);
 
     await ctx.reply("⏳ Отправляю код авторизации...");
-    const startResult = await authFlow.startAuth(phoneNumber);
+    return authFlow.startAuth(phoneNumber);
+  });
 
-    if (!startResult.success) {
-      await ctx.reply(`❌ Ошибка: ${startResult.error}\nПопробуй снова: /connect`);
-      await authFlow.destroy();
+  if (!startResult.success) {
+    await conversation.external(async () => {
+      const flow = pendingAuths.get(telegramId);
+      if (flow) await flow.destroy().catch(() => {});
       pendingAuths.delete(telegramId);
-      return;
-    }
+    });
+    await ctx.reply(`❌ Ошибка: ${startResult.error}\nПопробуй снова: /connect`);
+    return;
   }
 
   await ctx.reply(
@@ -78,7 +79,12 @@ export async function authConversation(
   const codeCtx = await conversation.waitFor("message:text");
   const code = codeCtx.message!.text.trim().replace(/[^0-9]/g, "");
 
-  const codeResult = await authFlow.submitCode(phoneNumber, code);
+  // Submit code via external() to use the stored auth flow
+  const codeResult = await conversation.external(async () => {
+    const authFlow = pendingAuths.get(telegramId);
+    if (!authFlow) return { success: false, error: "Auth session lost. Try /connect again" };
+    return authFlow.submitCode(phoneNumber, code);
+  });
 
   if (codeResult.needs2FA) {
     await ctx.reply("🔐 Требуется пароль двухфакторной аутентификации.\n\nВведи пароль:");
@@ -93,47 +99,63 @@ export async function authConversation(
       // May fail if bot lacks permissions
     }
 
-    const tfaResult = await authFlow.submit2FA(password);
+    const tfaResult = await conversation.external(async () => {
+      const authFlow = pendingAuths.get(telegramId);
+      if (!authFlow) return { success: false, error: "Auth session lost" };
+      return authFlow.submit2FA(password);
+    });
+
     if (!tfaResult.success) {
+      await conversation.external(async () => {
+        const flow = pendingAuths.get(telegramId);
+        if (flow) await flow.destroy().catch(() => {});
+        pendingAuths.delete(telegramId);
+      });
       await ctx.reply(`❌ Неверный пароль: ${tfaResult.error}\nПопробуй снова: /connect`);
-      await authFlow.destroy();
-      pendingAuths.delete(telegramId);
       return;
     }
   } else if (!codeResult.success) {
+    await conversation.external(async () => {
+      const flow = pendingAuths.get(telegramId);
+      if (flow) await flow.destroy().catch(() => {});
+      pendingAuths.delete(telegramId);
+    });
     await ctx.reply(`❌ Неверный код: ${codeResult.error}\nПопробуй снова: /connect`);
-    await authFlow.destroy();
-    pendingAuths.delete(telegramId);
     return;
   }
 
-  const sessionString = authFlow.getSessionString();
-  const encryptedSession = encrypt(sessionString);
-  pendingAuths.delete(telegramId);
+  // Save session and set up client
+  await conversation.external(async () => {
+    const authFlow = pendingAuths.get(telegramId);
+    if (!authFlow) return;
 
-  await db
-    .update(users)
-    .set({
-      mtprotoSession: encryptedSession,
-      isConnected: true,
-      updatedAt: new Date().toISOString(),
-    })
-    .where(eq(users.id, user.id));
+    const sessionString = authFlow.getSessionString();
+    const encryptedSession = encrypt(sessionString);
+    pendingAuths.delete(telegramId);
 
-  const existingClient = authFlow.getClient();
-  if (existingClient) {
-    const userbotClient = UserbotClient.fromExistingClient(
-      user.id,
-      existingClient,
-      handleIncomingMessage,
-    );
-    userbotManager.addExistingClient(user.id, userbotClient);
+    await db
+      .update(users)
+      .set({
+        mtprotoSession: encryptedSession,
+        isConnected: true,
+        updatedAt: new Date().toISOString(),
+      })
+      .where(eq(users.id, user.id));
 
-    // Trigger background scan of message history
-    historyScanner.scanUser(user.id).catch((error) => {
-      logger.error({ userId: user.id, error }, "Auto-scan after auth failed");
-    });
-  }
+    const existingClient = authFlow.getClient();
+    if (existingClient) {
+      const userbotClient = UserbotClient.fromExistingClient(
+        user.id,
+        existingClient,
+        handleIncomingMessage,
+      );
+      userbotManager.addExistingClient(user.id, userbotClient);
+
+      historyScanner.scanUser(user.id).catch((error) => {
+        logger.error({ userId: user.id, error }, "Auto-scan after auth failed");
+      });
+    }
+  });
 
   await ctx.reply(
     "✅ Аккаунт успешно подключён!\n\n" +

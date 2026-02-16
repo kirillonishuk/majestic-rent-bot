@@ -41,7 +41,11 @@ export function createBot(): Bot<BotContext> {
   });
 
   bot.catch((err) => {
-    logger.error({ error: err.error, update: err.ctx?.update?.update_id }, "Bot error");
+    const e = err.error;
+    logger.error({
+      error: e instanceof Error ? { message: e.message, stack: e.stack } : e,
+      update: err.ctx?.update?.update_id,
+    }, "Bot error");
   });
 
   bot.on("callback_query:data", async (ctx) => {
