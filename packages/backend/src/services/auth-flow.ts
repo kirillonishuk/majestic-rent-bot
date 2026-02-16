@@ -62,6 +62,13 @@ export class AuthFlow {
         return { success: false, needs2FA: true };
       }
       logger.error({ error }, "Failed to submit code");
+      const msg = error.errorMessage;
+      if (msg === "PHONE_CODE_EXPIRED") {
+        return { success: false, error: "Код истёк. Нажми /connect и введи новый код быстрее." };
+      }
+      if (msg === "PHONE_CODE_INVALID") {
+        return { success: false, error: "Неверный код. Проверь, что вводишь последний полученный код." };
+      }
       return { success: false, error: String(error) };
     }
   }
