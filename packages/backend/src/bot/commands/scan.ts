@@ -5,7 +5,7 @@ import { users } from "../../db/schema.js";
 import { historyScanner } from "../../services/history-scanner.js";
 import { logger } from "../../utils/logger.js";
 
-export async function scanCommand(ctx: Context): Promise<void> {
+export async function scanCommand(ctx: Context, forceFullRescan = false): Promise<void> {
   const telegramId = ctx.from!.id;
 
   const user = await db
@@ -35,7 +35,7 @@ export async function scanCommand(ctx: Context): Promise<void> {
   }
 
   // Scanner sends its own progress message
-  historyScanner.scanUser(user.id).catch((error) => {
+  historyScanner.scanUser(user.id, undefined, forceFullRescan).catch((error) => {
     logger.error({ userId: user.id, error }, "Scan command failed");
   });
 }

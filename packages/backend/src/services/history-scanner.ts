@@ -1,10 +1,10 @@
-import { eq, and, isNull } from "drizzle-orm";
+import { eq, and, isNull, count } from "drizzle-orm";
 import type { Bot, InlineKeyboard } from "grammy";
 import { FloodWaitError } from "telegram/errors/RPCErrorList.js";
 import { isRentalMessage, vehicleNameToImageSlug } from "@majestic/shared";
 import { config } from "../config.js";
 import { db } from "../db/index.js";
-import { users, vehicles } from "../db/schema.js";
+import { users, vehicles, rentals } from "../db/schema.js";
 import { processRentalMessage } from "./message-parser.js";
 import { userbotManager } from "./userbot-manager.js";
 import { scanCompleteKeyboard } from "../bot/keyboards.js";
@@ -40,6 +40,7 @@ class HistoryScanner {
   async scanUser(
     internalUserId: number,
     existingProgressMessageId?: number,
+    forceFullRescan?: boolean,
   ): Promise<ScanProgress> {
     if (this.isScanning(internalUserId)) {
       throw new Error("Scan already in progress for this user");
@@ -68,7 +69,13 @@ class HistoryScanner {
     this.activeScans.set(internalUserId, progress);
 
     try {
-      const minId = user.lastScannedMessageId ?? 0;
+      if (forceFullRescan) {
+        await db
+          .update(users)
+          .set({ lastScannedMessageId: null })
+          .where(eq(users.id, internalUserId));
+      }
+      const minId = forceFullRescan ? 0 : (user.lastScannedMessageId ?? 0);
       const isIncremental = minId > 0;
 
       await this.updateProgress(
@@ -162,18 +169,38 @@ class HistoryScanner {
 
       const duplicates = progress.rentalsFound - progress.newRentalsInserted - progress.parseFailures;
 
-      await this.updateProgress(
-        user.telegramId,
-        `📥 <b>Импорт истории</b>\n\n` +
-          `✅ Скан завершён!\n\n` +
-          `📨 Сообщений проверено: ${progress.totalProcessed.toLocaleString()}\n` +
-          `🏷 Аренд найдено: ${progress.rentalsFound}\n` +
-          `📥 Новых импортировано: ${progress.newRentalsInserted}` +
-          (duplicates > 0 ? `\n🔄 Дубликатов: ${duplicates}` : ``) +
-          (progress.parseFailures > 0 ? `\n⚠️ Не распарсилось: ${progress.parseFailures}` : ``),
-        progress,
-        { reply_markup: scanCompleteKeyboard() },
-      );
+      // When incremental scan found 0 messages, show existing stats
+      if (isIncremental && progress.totalProcessed === 0) {
+        const existingRentals = await db
+          .select({ count: count() })
+          .from(rentals)
+          .where(eq(rentals.userId, internalUserId))
+          .get();
+        const totalRentals = existingRentals?.count ?? 0;
+
+        await this.updateProgress(
+          user.telegramId,
+          `📥 <b>Импорт истории</b>\n\n` +
+            `✅ Новых сообщений нет.\n\n` +
+            `📦 Всего аренд в базе: ${totalRentals}\n\n` +
+            `💡 Если хочешь пересканировать всё заново — нажми кнопку ниже.`,
+          progress,
+          { reply_markup: scanCompleteKeyboard() },
+        );
+      } else {
+        await this.updateProgress(
+          user.telegramId,
+          `📥 <b>Импорт истории</b>\n\n` +
+            `✅ Скан завершён!\n\n` +
+            `📨 Сообщений проверено: ${progress.totalProcessed.toLocaleString()}\n` +
+            `🏷 Аренд найдено: ${progress.rentalsFound}\n` +
+            `📥 Новых импортировано: ${progress.newRentalsInserted}` +
+            (duplicates > 0 ? `\n🔄 Дубликатов: ${duplicates}` : ``) +
+            (progress.parseFailures > 0 ? `\n⚠️ Не распарсилось: ${progress.parseFailures}` : ``),
+          progress,
+          { reply_markup: scanCompleteKeyboard() },
+        );
+      }
 
       logger.info(
         { userId: internalUserId, ...progress },
@@ -200,7 +227,7 @@ class HistoryScanner {
         const savedMsgId = progress.progressMessageId;
         progress.isRunning = false;
         this.activeScans.delete(internalUserId);
-        return this.scanUser(internalUserId, savedMsgId ?? undefined);
+        return this.scanUser(internalUserId, savedMsgId ?? undefined, false);
       }
 
       logger.error({ error, userId: internalUserId }, "History scan failed");

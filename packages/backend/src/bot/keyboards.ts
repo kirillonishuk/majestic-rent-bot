@@ -23,7 +23,9 @@ export function connectedMenuKeyboard(): InlineKeyboard {
 
 export function scanCompleteKeyboard(): InlineKeyboard {
   return new InlineKeyboard()
-    .text("🔄 Повторить скан", "scan");
+    .text("🔄 Повторить скан", "scan")
+    .row()
+    .text("📋 Полный пересканирование", "scan_full");
 }
 
 export function disconnectConfirmKeyboard(): InlineKeyboard {

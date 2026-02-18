@@ -17,7 +17,7 @@ export function createBot(): Bot {
   bot.command("connect", startConnect);
   bot.command("status", statusCommand);
   bot.command("disconnect", disconnectCommand);
-  bot.command("scan", scanCommand);
+  bot.command("scan", (ctx) => scanCommand(ctx));
   bot.command("help", async (ctx) => {
     await ctx.reply(
       "📋 Команды:\n\n" +
@@ -66,6 +66,10 @@ export function createBot(): Bot {
       case "scan":
         await ctx.answerCallbackQuery();
         await scanCommand(ctx);
+        break;
+      case "scan_full":
+        await ctx.answerCallbackQuery();
+        await scanCommand(ctx, true);
         break;
       default:
         await ctx.answerCallbackQuery();
