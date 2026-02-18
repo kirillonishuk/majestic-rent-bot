@@ -8,6 +8,12 @@
   --tg-theme-button-color: #2678b6;
   --tg-theme-button-text-color: #ffffff;
   --tg-theme-secondary-bg-color: #f0f0f0;
+  --tg-theme-section-bg-color: #ffffff;
+  --tg-theme-subtitle-text-color: #999999;
+  --tg-theme-section-separator-color: #e0e0e0;
+  --tg-theme-accent-text-color: #2678b6;
+  --tg-theme-destructive-text-color: #e53935;
+  --tg-theme-bottom-bar-bg-color: #ffffff;
 }
 
 body {

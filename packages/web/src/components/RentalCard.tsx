@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import type { RentalResponse } from "@majestic/shared";
-import { formatPrice, formatDate, formatDuration, getCarImageUrl } from "../utils/format.js";
+import { formatPrice, formatDate, formatDuration } from "../utils/format.js";
+import CarImage from "./CarImage.js";
 
 export default function RentalCard({ rental }: { rental: RentalResponse }) {
   const navigate = useNavigate();
@@ -11,13 +12,10 @@ export default function RentalCard({ rental }: { rental: RentalResponse }) {
       onClick={() => navigate(`/vehicle/${rental.vehicleId}`)}
       className="flex gap-3 p-3 rounded-xl bg-[var(--tg-theme-bg-color)] cursor-pointer active:opacity-80 transition-opacity"
     >
-      <img
-        src={getCarImageUrl(rental.imageSlug)}
-        alt={rental.vehicleName}
-        className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
-        onError={(e) => {
-          (e.target as HTMLImageElement).src = getCarImageUrl(null);
-        }}
+      <CarImage
+        slug={rental.imageSlug}
+        name={rental.vehicleName}
+        className="w-16 h-16 rounded-lg flex-shrink-0"
       />
 
       <div className="flex-1 min-w-0">
@@ -37,7 +35,7 @@ export default function RentalCard({ rental }: { rental: RentalResponse }) {
             {formatDuration(rental.durationHours)} · {rental.renterName}
           </span>
           {isActive && (
-            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 font-medium">
+            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[var(--tg-theme-accent-text-color)]/10 text-[var(--tg-theme-accent-text-color)] font-medium">
               Активна
             </span>
           )}

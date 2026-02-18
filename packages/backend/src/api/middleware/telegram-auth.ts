@@ -23,6 +23,11 @@ export async function telegramAuthMiddleware(
   request: FastifyRequest,
   reply: FastifyReply,
 ): Promise<void> {
+  // Static files and health check don't need auth
+  if (request.url.startsWith("/cars/") || request.url === "/api/health") {
+    return;
+  }
+
   const authHeader = request.headers.authorization;
   if (!authHeader?.startsWith("tma ")) {
     reply.code(401).send({ error: "Missing authorization" });
