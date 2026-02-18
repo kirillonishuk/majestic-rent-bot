@@ -72,5 +72,14 @@ export function createBot(): Bot {
     }
   });
 
+  bot.api.setMyCommands([
+    { command: "start", description: "Главное меню" },
+    { command: "connect", description: "Подключить Telegram аккаунт" },
+    { command: "disconnect", description: "Отключить аккаунт" },
+    { command: "scan", description: "Импорт истории аренд" },
+    { command: "status", description: "Статус и статистика" },
+    { command: "help", description: "Список команд" },
+  ]);
+
   return bot;
 }
