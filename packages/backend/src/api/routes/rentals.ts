@@ -92,9 +92,16 @@ export async function rentalsRoutes(app: FastifyInstance): Promise<void> {
     let fromDate: Date;
 
     switch (period) {
-      case "week":
-        fromDate = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+      case "today":
+        fromDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
         break;
+      case "week": {
+        // Current week starting from Monday
+        const day = now.getDay(); // 0=Sun, 1=Mon, ...
+        const diff = day === 0 ? 6 : day - 1; // days since Monday
+        fromDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() - diff);
+        break;
+      }
       case "month":
         fromDate = new Date(now.getFullYear(), now.getMonth(), 1);
         break;
