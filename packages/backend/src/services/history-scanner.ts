@@ -90,7 +90,7 @@ class HistoryScanner {
       let lastProgressUpdate = Date.now();
 
       const iter = client.iterMessages(config.majesticBotUsername, {
-        minId,
+        ...(minId > 0 ? { minId } : {}),
         reverse: true,
         waitTime: 2,
       });
@@ -230,14 +230,16 @@ class HistoryScanner {
         return this.scanUser(internalUserId, savedMsgId ?? undefined, false);
       }
 
+      const errorMsg = error instanceof Error ? error.message : String(error);
       logger.error({ error, userId: internalUserId }, "History scan failed");
       await this.updateProgress(
         user.telegramId,
         `📥 <b>Импорт истории</b>\n\n` +
           `❌ Скан прерван.\n\n` +
           `📥 Импортировано до ошибки: ${progress.newRentalsInserted}\n` +
-          `Используй /scan для продолжения.`,
+          `⚠️ ${errorMsg}`,
         progress,
+        { reply_markup: scanCompleteKeyboard() },
       );
       throw error;
     } finally {
