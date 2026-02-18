@@ -13,6 +13,7 @@ interface ScanProgress {
   totalProcessed: number;
   rentalsFound: number;
   newRentalsInserted: number;
+  parseFailures: number;
   isRunning: boolean;
 }
 
@@ -51,6 +52,7 @@ class HistoryScanner {
       totalProcessed: 0,
       rentalsFound: 0,
       newRentalsInserted: 0,
+      parseFailures: 0,
       isRunning: true,
     };
     this.activeScans.set(internalUserId, progress);
@@ -97,6 +99,9 @@ class HistoryScanner {
           if (result.inserted) {
             progress.newRentalsInserted++;
           }
+          if (result.parseError) {
+            progress.parseFailures++;
+          }
         }
 
         // Progress update every 30 seconds
@@ -127,13 +132,16 @@ class HistoryScanner {
           .where(eq(users.id, internalUserId));
       }
 
+      const duplicates = progress.rentalsFound - progress.newRentalsInserted - progress.parseFailures;
+
       await this.sendProgress(
         user.telegramId,
         `Скан завершён!\n\n` +
           `Сообщений проверено: ${progress.totalProcessed}\n` +
           `Аренд найдено: ${progress.rentalsFound}\n` +
           `Новых импортировано: ${progress.newRentalsInserted}\n` +
-          `Дубликатов пропущено: ${progress.rentalsFound - progress.newRentalsInserted}`,
+          (duplicates > 0 ? `Дубликатов пропущено: ${duplicates}\n` : ``) +
+          (progress.parseFailures > 0 ? `Не распарсилось: ${progress.parseFailures}` : ``),
       );
 
       logger.info(

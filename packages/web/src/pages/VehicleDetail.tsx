@@ -8,7 +8,7 @@ interface VehicleData {
   vehicle: {
     id: number;
     name: string;
-    plateNumber: string;
+    plateNumber: string | null;
     imageSlug: string | null;
   };
   rentals: {
@@ -75,9 +75,11 @@ export default function VehicleDetail() {
         />
         <div className="p-3">
           <h1 className="text-lg font-bold">{vehicle.name}</h1>
-          <div className="text-sm text-[var(--tg-theme-hint-color)]">
-            {vehicle.plateNumber}
-          </div>
+          {vehicle.plateNumber && (
+            <div className="text-sm text-[var(--tg-theme-hint-color)]">
+              {vehicle.plateNumber}
+            </div>
+          )}
         </div>
       </div>
 

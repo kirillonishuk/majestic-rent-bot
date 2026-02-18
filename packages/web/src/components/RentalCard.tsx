@@ -29,7 +29,7 @@ export default function RentalCard({ rental }: { rental: RentalResponse }) {
         </div>
 
         <div className="text-xs text-[var(--tg-theme-hint-color)] mt-0.5">
-          {rental.plateNumber} · {rental.server}
+          {rental.plateNumber ? `${rental.plateNumber} · ` : ""}{rental.server}
         </div>
 
         <div className="flex items-center justify-between mt-1.5">

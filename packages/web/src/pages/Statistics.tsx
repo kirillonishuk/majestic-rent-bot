@@ -120,7 +120,7 @@ export default function Statistics() {
               <div className="min-w-0">
                 <div className="text-sm font-medium truncate">{v.name}</div>
                 <div className="text-xs text-[var(--tg-theme-hint-color)]">
-                  {v.plateNumber} · {v.count} аренд
+                  {v.plateNumber ? `${v.plateNumber} · ` : ""}{v.count} аренд
                 </div>
               </div>
               <div className="text-sm font-bold text-[var(--tg-theme-button-color)] ml-2">

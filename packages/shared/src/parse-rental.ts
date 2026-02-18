@@ -27,7 +27,7 @@ export function parseRentalMessage(text: string): ParsedRental | null {
   const durationMatch = text.match(FIELD_PATTERNS.duration);
   const renter = text.match(FIELD_PATTERNS.renter)?.[1]?.trim();
 
-  if (!server || !vehicle || !plate || !priceMatch || !durationMatch) {
+  if (!server || !vehicle || !priceMatch || !durationMatch) {
     return null;
   }
 
@@ -43,7 +43,7 @@ export function parseRentalMessage(text: string): ParsedRental | null {
     characterName: charMatch?.[1]?.trim() ?? "",
     characterId: charMatch?.[2]?.trim() ?? "",
     vehicleName: vehicle,
-    plateNumber: plate,
+    plateNumber: plate ?? null,
     price,
     durationHours,
     renterName: renter ?? "",

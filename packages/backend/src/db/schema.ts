@@ -28,12 +28,12 @@ export const vehicles = sqliteTable(
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
     name: text("name").notNull(),
-    plateNumber: text("plate_number").notNull(),
+    plateNumber: text("plate_number"),
     imageSlug: text("image_slug"),
     createdAt: text("created_at").notNull().default(sql`(datetime('now'))`),
   },
   (table) => [
-    uniqueIndex("vehicles_user_plate_idx").on(table.userId, table.plateNumber),
+    uniqueIndex("vehicles_user_name_idx").on(table.userId, table.name),
     index("vehicles_user_id_idx").on(table.userId),
   ],
 );

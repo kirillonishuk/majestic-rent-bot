@@ -3,7 +3,7 @@ export interface ParsedRental {
   characterName: string;
   characterId: string;
   vehicleName: string;
-  plateNumber: string;
+  plateNumber: string | null;
   price: number;
   durationHours: number;
   renterName: string;
@@ -13,7 +13,7 @@ export interface RentalResponse {
   id: number;
   vehicleId: number;
   vehicleName: string;
-  plateNumber: string;
+  plateNumber: string | null;
   imageSlug: string | null;
   server: string;
   price: number;
@@ -26,7 +26,7 @@ export interface RentalResponse {
 export interface VehicleResponse {
   id: number;
   name: string;
-  plateNumber: string;
+  plateNumber: string | null;
   imageSlug: string | null;
   rentalCount: number;
   totalRevenue: number;
@@ -41,7 +41,7 @@ export interface RentalStatsResponse {
   byVehicle: {
     vehicleId: number;
     name: string;
-    plateNumber: string;
+    plateNumber: string | null;
     count: number;
     revenue: number;
   }[];

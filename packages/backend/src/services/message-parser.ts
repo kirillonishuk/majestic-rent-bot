@@ -1,4 +1,4 @@
-import { eq, and } from "drizzle-orm";
+import { eq, and, gt } from "drizzle-orm";
 import type { NewMessageEvent } from "telegram/events/index.js";
 import { isRentalMessage, parseRentalMessage, vehicleNameToImageSlug } from "@majestic/shared";
 import { db } from "../db/index.js";
@@ -21,15 +21,14 @@ export interface ProcessRentalParams {
 
 export async function processRentalMessage(
   params: ProcessRentalParams,
-): Promise<{ inserted: boolean; rentalId?: number }> {
+): Promise<{ inserted: boolean; rentalId?: number; parseError?: boolean }> {
   const { internalUserId, text, messageId, messageDate } = params;
 
   if (!isRentalMessage(text)) return { inserted: false };
 
   const parsed = parseRentalMessage(text);
   if (!parsed) {
-    logger.warn({ userId: internalUserId }, "Failed to parse rental message");
-    return { inserted: false };
+    return { inserted: false, parseError: true };
   }
 
   const user = await db
@@ -43,13 +42,14 @@ export async function processRentalMessage(
     return { inserted: false };
   }
 
+  // Find vehicle by name (primary identifier)
   let vehicle = await db
     .select()
     .from(vehicles)
     .where(
       and(
         eq(vehicles.userId, internalUserId),
-        eq(vehicles.plateNumber, parsed.plateNumber),
+        eq(vehicles.name, parsed.vehicleName),
       ),
     )
     .get();
@@ -64,8 +64,27 @@ export async function processRentalMessage(
         plateNumber: parsed.plateNumber,
         imageSlug,
       })
+      .onConflictDoNothing()
       .returning();
-    vehicle = inserted;
+    vehicle = inserted ?? await db
+      .select()
+      .from(vehicles)
+      .where(
+        and(
+          eq(vehicles.userId, internalUserId),
+          eq(vehicles.name, parsed.vehicleName),
+        ),
+      )
+      .get();
+    if (!vehicle) return { inserted: false };
+  }
+
+  // Update plate number if we have one now but didn't before
+  if (parsed.plateNumber && !vehicle.plateNumber) {
+    await db
+      .update(vehicles)
+      .set({ plateNumber: parsed.plateNumber })
+      .where(eq(vehicles.id, vehicle.id));
   }
 
   const rentedAt = messageDate;
@@ -74,6 +93,31 @@ export async function processRentalMessage(
   );
   const now = new Date();
   const alreadyExpired = expiresAt <= now;
+
+  // Close previous active rentals for this vehicle (re-rental)
+  if (!alreadyExpired) {
+    const activeRentals = await db
+      .select({ id: rentals.id })
+      .from(rentals)
+      .where(
+        and(
+          eq(rentals.vehicleId, vehicle.id),
+          eq(rentals.notificationSent, false),
+          gt(rentals.expiresAt, now.toISOString()),
+        ),
+      )
+      .all();
+
+    for (const old of activeRentals) {
+      await db
+        .update(rentals)
+        .set({ notificationSent: true })
+        .where(eq(rentals.id, old.id));
+      if (scheduler) {
+        scheduler.cancelNotification(old.id);
+      }
+    }
+  }
 
   const [rental] = await db
     .insert(rentals)

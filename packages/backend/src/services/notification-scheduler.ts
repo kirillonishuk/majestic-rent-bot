@@ -8,7 +8,7 @@ interface ScheduledNotification {
   rentalId: number;
   telegramId: number;
   vehicleName: string;
-  plateNumber: string;
+  plateNumber: string | null;
   expiresAt: Date;
 }
 
@@ -85,7 +85,8 @@ export class NotificationScheduler {
         item.telegramId,
         `🔔 Аренда истекла!\n\n` +
           `Транспорт: ${item.vehicleName}\n` +
-          `Номер: ${item.plateNumber}\n\n` +
+          (item.plateNumber ? `Номер: ${item.plateNumber}\n` : "") +
+          `\n` +
           `Пора выставить на аренду снова!`,
       );
 
@@ -132,6 +133,14 @@ export class NotificationScheduler {
           errorMessage: String(error),
         });
       }
+    }
+  }
+
+  cancelNotification(rentalId: number): void {
+    const idx = this.queue.findIndex((n) => n.rentalId === rentalId);
+    if (idx !== -1) {
+      this.queue.splice(idx, 1);
+      logger.info({ rentalId }, "Notification cancelled (vehicle re-rented)");
     }
   }
 
