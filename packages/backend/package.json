@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
+    "build:docker": "find src -name '*.ts' ! -name '*.d.ts' | xargs esbuild --outdir=dist --format=esm --platform=node --outbase=src",
     "start": "node dist/index.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"

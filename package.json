@@ -15,5 +15,8 @@
     "build:shared": "npm run build -w packages/shared",
     "build:backend": "npm run build -w packages/backend",
     "build:web": "npm run build -w packages/web"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.3"
   }
 }

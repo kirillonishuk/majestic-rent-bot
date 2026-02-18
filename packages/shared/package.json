@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:docker": "esbuild src/index.ts --bundle --outfile=dist/index.js --format=esm --platform=node",
     "dev": "tsc --watch"
   },
   "devDependencies": {

@@ -119,7 +119,7 @@ async function handlePhone(ctx: Context, telegramId: number, state: AuthState, t
   }
 
   state.step = "awaiting_code";
-  await ctx.reply("✅ Код отправлен в Telegram!\n\nВведи код авторизации (5 цифр):");
+  await ctx.reply("✅ Код отправлен в Telegram!\n\n⚠️ Введи код через пробелы, иначе Telegram его заблокирует.\nНапример: 1 2 3 4 5");
 }
 
 async function handleCode(ctx: Context, telegramId: number, state: AuthState, text: string): Promise<void> {
