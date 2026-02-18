@@ -16,7 +16,7 @@ export function vehicleNameToImageSlug(vehicleName: string): string | null {
   const exact = nameToId.get(lower);
   if (exact) return exact;
 
-  // 2. Match by model name (last word or remaining after brand)
+  // 2. Match by model name (last word)
   const words = withoutTag.split(/\s+/);
   const model = words[words.length - 1].toLowerCase();
   for (const [id, info] of Object.entries(vehiclesMap)) {
@@ -29,6 +29,18 @@ export function vehicleNameToImageSlug(vehicleName: string): string | null {
     for (const [id, info] of Object.entries(vehiclesMap)) {
       if (info.model.toLowerCase() === modelFull) return id;
     }
+
+    // 3.5. Partial match: map model starts with input model
+    // e.g. input "Timucua" matches "Timucua SP3"
+    for (const [id, info] of Object.entries(vehiclesMap)) {
+      if (info.model.toLowerCase().startsWith(modelFull)) return id;
+    }
+  }
+
+  // 3.6. Partial match by last word
+  // e.g. input last word "Timucua" matches model "Timucua SP3"
+  for (const [id, info] of Object.entries(vehiclesMap)) {
+    if (info.model.toLowerCase().startsWith(model) && model.length >= 3) return id;
   }
 
   // 4. Match by vehicle ID directly

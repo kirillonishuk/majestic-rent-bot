@@ -87,7 +87,7 @@ export default function Statistics() {
             <BarChart data={stats.chartData}>
               <XAxis
                 dataKey="date"
-                tick={{ fontSize: 10 }}
+                tick={{ fontSize: 10, fill: "var(--tg-theme-hint-color)" }}
                 tickFormatter={(v) =>
                   new Date(v).toLocaleDateString("ru-RU", {
                     day: "numeric",
@@ -95,8 +95,15 @@ export default function Statistics() {
                   })
                 }
               />
-              <YAxis tick={{ fontSize: 10 }} width={50} />
+              <YAxis tick={{ fontSize: 10, fill: "var(--tg-theme-hint-color)" }} width={50} />
               <Tooltip
+                contentStyle={{
+                  backgroundColor: "var(--tg-theme-bg-color)",
+                  borderColor: "var(--tg-theme-hint-color)",
+                  borderRadius: 8,
+                  color: "var(--tg-theme-text-color)",
+                }}
+                labelStyle={{ color: "var(--tg-theme-text-color)" }}
                 formatter={(value: number) => [formatPrice(value), "Доход"]}
                 labelFormatter={(label) =>
                   new Date(label).toLocaleDateString("ru-RU")

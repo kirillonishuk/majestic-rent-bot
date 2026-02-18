@@ -1,10 +1,10 @@
-import { eq } from "drizzle-orm";
+import { eq, and, isNull } from "drizzle-orm";
 import type { Bot, InlineKeyboard } from "grammy";
 import { FloodWaitError } from "telegram/errors/RPCErrorList.js";
-import { isRentalMessage } from "@majestic/shared";
+import { isRentalMessage, vehicleNameToImageSlug } from "@majestic/shared";
 import { config } from "../config.js";
 import { db } from "../db/index.js";
-import { users } from "../db/schema.js";
+import { users, vehicles } from "../db/schema.js";
 import { processRentalMessage } from "./message-parser.js";
 import { userbotManager } from "./userbot-manager.js";
 import { scanCompleteKeyboard } from "../bot/keyboards.js";
@@ -144,6 +144,20 @@ class HistoryScanner {
           .update(users)
           .set({ lastScannedMessageId: highestMessageId })
           .where(eq(users.id, internalUserId));
+      }
+
+      // Recalculate image slugs for vehicles missing them
+      const vehiclesWithoutImage = await db
+        .select()
+        .from(vehicles)
+        .where(and(eq(vehicles.userId, internalUserId), isNull(vehicles.imageSlug)))
+        .all();
+
+      for (const v of vehiclesWithoutImage) {
+        const slug = vehicleNameToImageSlug(v.name);
+        if (slug) {
+          await db.update(vehicles).set({ imageSlug: slug }).where(eq(vehicles.id, v.id));
+        }
       }
 
       const duplicates = progress.rentalsFound - progress.newRentalsInserted - progress.parseFailures;
