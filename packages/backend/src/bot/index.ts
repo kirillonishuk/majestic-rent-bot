@@ -3,7 +3,7 @@ import { config } from "../config.js";
 import { logger } from "../utils/logger.js";
 import { startCommand } from "./commands/start.js";
 import { statusCommand } from "./commands/status.js";
-import { disconnectCommand } from "./commands/disconnect.js";
+import { disconnectCommand, performDisconnect } from "./commands/disconnect.js";
 import { scanCommand } from "./commands/scan.js";
 import { authStateMachine, startConnect } from "./auth-state-machine.js";
 
@@ -49,6 +49,15 @@ export function createBot(): Bot {
       case "disconnect":
         await ctx.answerCallbackQuery();
         await disconnectCommand(ctx);
+        break;
+      case "disconnect_confirm":
+        await ctx.answerCallbackQuery({ text: "Отключаю..." });
+        try { await ctx.deleteMessage(); } catch { /* ignore */ }
+        await performDisconnect(ctx);
+        break;
+      case "disconnect_cancel":
+        await ctx.answerCallbackQuery({ text: "Отменено" });
+        try { await ctx.deleteMessage(); } catch { /* ignore */ }
         break;
       case "status":
         await ctx.answerCallbackQuery();

@@ -20,15 +20,21 @@ export async function scanCommand(ctx: Context): Promise<void> {
   }
 
   if (historyScanner.isScanning(user.id)) {
-    await ctx.reply("Скан уже запущен. Дождись завершения.");
+    const progress = historyScanner.getProgress(user.id);
+    if (progress) {
+      await ctx.reply(
+        `📥 <b>Скан уже идёт</b>\n\n` +
+          `📨 Сообщений: ${progress.totalProcessed.toLocaleString()}\n` +
+          `🏷 Новых аренд: ${progress.newRentalsInserted}`,
+        { parse_mode: "HTML" },
+      );
+    } else {
+      await ctx.reply("⏳ Скан уже запущен. Дождись завершения.");
+    }
     return;
   }
 
-  await ctx.reply(
-    "Запускаю скан истории сообщений от @MajesticRolePlayBot...\n" +
-      "Я пришлю обновления о прогрессе. Это может занять несколько минут.",
-  );
-
+  // Scanner sends its own progress message
   historyScanner.scanUser(user.id).catch((error) => {
     logger.error({ userId: user.id, error }, "Scan command failed");
   });

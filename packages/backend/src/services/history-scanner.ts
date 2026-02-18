@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import type { Bot } from "grammy";
+import type { Bot, InlineKeyboard } from "grammy";
 import { FloodWaitError } from "telegram/errors/RPCErrorList.js";
 import { isRentalMessage } from "@majestic/shared";
 import { config } from "../config.js";
@@ -7,6 +7,7 @@ import { db } from "../db/index.js";
 import { users } from "../db/schema.js";
 import { processRentalMessage } from "./message-parser.js";
 import { userbotManager } from "./userbot-manager.js";
+import { scanCompleteKeyboard } from "../bot/keyboards.js";
 import { logger } from "../utils/logger.js";
 
 interface ScanProgress {
@@ -14,6 +15,7 @@ interface ScanProgress {
   rentalsFound: number;
   newRentalsInserted: number;
   parseFailures: number;
+  progressMessageId: number | null;
   isRunning: boolean;
 }
 
@@ -31,7 +33,14 @@ class HistoryScanner {
     return this.activeScans.get(userId)?.isRunning ?? false;
   }
 
-  async scanUser(internalUserId: number): Promise<ScanProgress> {
+  getProgress(userId: number): ScanProgress | undefined {
+    return this.activeScans.get(userId);
+  }
+
+  async scanUser(
+    internalUserId: number,
+    existingProgressMessageId?: number,
+  ): Promise<ScanProgress> {
     if (this.isScanning(internalUserId)) {
       throw new Error("Scan already in progress for this user");
     }
@@ -53,6 +62,7 @@ class HistoryScanner {
       rentalsFound: 0,
       newRentalsInserted: 0,
       parseFailures: 0,
+      progressMessageId: existingProgressMessageId ?? null,
       isRunning: true,
     };
     this.activeScans.set(internalUserId, progress);
@@ -61,11 +71,12 @@ class HistoryScanner {
       const minId = user.lastScannedMessageId ?? 0;
       const isIncremental = minId > 0;
 
-      await this.sendProgress(
+      await this.updateProgress(
         user.telegramId,
         isIncremental
-          ? "Проверяю пропущенные сообщения..."
-          : "Запускаю полный скан истории. Это может занять несколько минут...",
+          ? `📥 <b>Импорт истории</b>\n\n⏳ Проверяю новые сообщения...`
+          : `📥 <b>Импорт истории</b>\n\n⏳ Запускаю полный скан. Это может занять несколько минут...`,
+        progress,
       );
 
       let highestMessageId = minId;
@@ -107,10 +118,13 @@ class HistoryScanner {
         // Progress update every 30 seconds
         const now = Date.now();
         if (now - lastProgressUpdate > 30_000) {
-          await this.sendProgress(
+          await this.updateProgress(
             user.telegramId,
-            `Сканирование... ${progress.totalProcessed} сообщений проверено, ` +
-              `${progress.newRentalsInserted} новых аренд найдено`,
+            `📥 <b>Импорт истории</b>\n\n` +
+              `⏳ Сканирование...\n\n` +
+              `📨 Сообщений: ${progress.totalProcessed.toLocaleString()}\n` +
+              `🏷 Новых аренд: ${progress.newRentalsInserted}`,
+            progress,
           );
           lastProgressUpdate = now;
         }
@@ -134,14 +148,17 @@ class HistoryScanner {
 
       const duplicates = progress.rentalsFound - progress.newRentalsInserted - progress.parseFailures;
 
-      await this.sendProgress(
+      await this.updateProgress(
         user.telegramId,
-        `Скан завершён!\n\n` +
-          `Сообщений проверено: ${progress.totalProcessed}\n` +
-          `Аренд найдено: ${progress.rentalsFound}\n` +
-          `Новых импортировано: ${progress.newRentalsInserted}\n` +
-          (duplicates > 0 ? `Дубликатов пропущено: ${duplicates}\n` : ``) +
-          (progress.parseFailures > 0 ? `Не распарсилось: ${progress.parseFailures}` : ``),
+        `📥 <b>Импорт истории</b>\n\n` +
+          `✅ Скан завершён!\n\n` +
+          `📨 Сообщений проверено: ${progress.totalProcessed.toLocaleString()}\n` +
+          `🏷 Аренд найдено: ${progress.rentalsFound}\n` +
+          `📥 Новых импортировано: ${progress.newRentalsInserted}` +
+          (duplicates > 0 ? `\n🔄 Дубликатов: ${duplicates}` : ``) +
+          (progress.parseFailures > 0 ? `\n⚠️ Не распарсилось: ${progress.parseFailures}` : ``),
+        progress,
+        { reply_markup: scanCompleteKeyboard() },
       );
 
       logger.info(
@@ -157,23 +174,29 @@ class HistoryScanner {
           { userId: internalUserId, waitSeconds },
           "FloodWait during scan",
         );
-        await this.sendProgress(
+        await this.updateProgress(
           user.telegramId,
-          `Telegram ограничил скорость. Ожидание ${waitSeconds} секунд...`,
+          `📥 <b>Импорт истории</b>\n\n` +
+            `⏳ Telegram ограничил скорость. Ожидание ${waitSeconds} сек...`,
+          progress,
         );
         await new Promise((resolve) =>
           setTimeout(resolve, waitSeconds * 1000),
         );
+        const savedMsgId = progress.progressMessageId;
         progress.isRunning = false;
         this.activeScans.delete(internalUserId);
-        return this.scanUser(internalUserId);
+        return this.scanUser(internalUserId, savedMsgId ?? undefined);
       }
 
       logger.error({ error, userId: internalUserId }, "History scan failed");
-      await this.sendProgress(
+      await this.updateProgress(
         user.telegramId,
-        `Скан прерван. Импортировано ${progress.newRentalsInserted} аренд до ошибки. ` +
-          `Используйте /scan для продолжения.`,
+        `📥 <b>Импорт истории</b>\n\n` +
+          `❌ Скан прерван.\n\n` +
+          `📥 Импортировано до ошибки: ${progress.newRentalsInserted}\n` +
+          `Используй /scan для продолжения.`,
+        progress,
       );
       throw error;
     } finally {
@@ -182,13 +205,41 @@ class HistoryScanner {
     }
   }
 
-  private async sendProgress(
+  private async updateProgress(
     telegramId: number,
     text: string,
+    progress: ScanProgress,
+    options?: { reply_markup?: InlineKeyboard },
   ): Promise<void> {
     if (!this.bot) return;
     try {
-      await this.bot.api.sendMessage(telegramId, text);
+      if (progress.progressMessageId) {
+        try {
+          await this.bot.api.editMessageText(
+            telegramId,
+            progress.progressMessageId,
+            text,
+            { parse_mode: "HTML", reply_markup: options?.reply_markup },
+          );
+          return;
+        } catch (editError: unknown) {
+          if (
+            editError instanceof Error &&
+            editError.message.includes("message is not modified")
+          ) {
+            return;
+          }
+          logger.debug(
+            { editError, telegramId },
+            "Failed to edit progress message, sending new one",
+          );
+        }
+      }
+      const sent = await this.bot.api.sendMessage(telegramId, text, {
+        parse_mode: "HTML",
+        reply_markup: options?.reply_markup,
+      });
+      progress.progressMessageId = sent.message_id;
     } catch (error) {
       logger.warn({ error, telegramId }, "Failed to send scan progress");
     }

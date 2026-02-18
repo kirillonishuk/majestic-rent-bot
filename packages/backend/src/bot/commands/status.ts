@@ -3,6 +3,7 @@ import { eq, and, gt, count, sql } from "drizzle-orm";
 import { db } from "../../db/index.js";
 import { users, rentals } from "../../db/schema.js";
 import { userbotManager } from "../../services/userbot-manager.js";
+import { mainMenuKeyboard, connectedMenuKeyboard } from "../keyboards.js";
 
 export async function statusCommand(ctx: Context): Promise<void> {
   const telegramId = ctx.from!.id;
@@ -41,11 +42,16 @@ export async function statusCommand(ctx: Context): Promise<void> {
     )
     .get();
 
+  const keyboard = isOnline || user.isConnected
+    ? connectedMenuKeyboard()
+    : mainMenuKeyboard();
+
   await ctx.reply(
-    `📊 Статус\n\n` +
+    `📊 <b>Статус</b>\n\n` +
       `Подключение: ${isOnline ? "✅ Онлайн" : user.isConnected ? "⚠️ Переподключение..." : "❌ Не подключён"}\n` +
       `Всего аренд: ${stats?.total ?? 0}\n` +
       `Общий доход: $${(stats?.totalRevenue ?? 0).toLocaleString()}\n` +
       `Активных аренд: ${activeRentals?.count ?? 0}`,
+    { parse_mode: "HTML", reply_markup: keyboard },
   );
 }

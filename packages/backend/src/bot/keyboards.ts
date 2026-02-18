@@ -20,3 +20,14 @@ export function connectedMenuKeyboard(): InlineKeyboard {
     .row()
     .text("ℹ️ Статус", "status");
 }
+
+export function scanCompleteKeyboard(): InlineKeyboard {
+  return new InlineKeyboard()
+    .text("🔄 Повторить скан", "scan");
+}
+
+export function disconnectConfirmKeyboard(): InlineKeyboard {
+  return new InlineKeyboard()
+    .text("✅ Да, отключить", "disconnect_confirm")
+    .text("❌ Отмена", "disconnect_cancel");
+}

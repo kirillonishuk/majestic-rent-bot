@@ -83,11 +83,11 @@ export class NotificationScheduler {
     try {
       await this.bot.api.sendMessage(
         item.telegramId,
-        `🔔 Аренда истекла!\n\n` +
+        `🔔 <b>Аренда истекла!</b>\n\n` +
           `Транспорт: ${item.vehicleName}\n` +
           (item.plateNumber ? `Номер: ${item.plateNumber}\n` : "") +
-          `\n` +
-          `Пора выставить на аренду снова!`,
+          `\nПора выставить на аренду снова!`,
+        { parse_mode: "HTML" },
       );
 
       await db

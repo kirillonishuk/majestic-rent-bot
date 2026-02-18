@@ -196,9 +196,9 @@ async function finishAuth(ctx: Context, telegramId: number, state: AuthState): P
   authStates.delete(telegramId);
 
   await ctx.reply(
-    "✅ Аккаунт успешно подключён!\n\n" +
+    "✅ <b>Аккаунт успешно подключён!</b>\n\n" +
       "Теперь я отслеживаю уведомления об аренде от @MajesticRolePlayBot и пришлю тебе уведомление, когда аренда истечёт.\n\n" +
-      "Запускаю импорт истории сообщений...",
-    { reply_markup: connectedMenuKeyboard() },
+      "⏳ Запускаю импорт истории сообщений...",
+    { parse_mode: "HTML", reply_markup: connectedMenuKeyboard() },
   );
 }
